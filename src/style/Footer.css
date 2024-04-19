@@ -70,7 +70,7 @@
     text-transform: uppercase;
 }
 
-button::before {
+.footer__top__left__top button::before {
     content: "";
     position: absolute;
     bottom: 0;
@@ -83,7 +83,7 @@ button::before {
 
 }
 
-button:hover::before {
+.footer__top__left__top button:hover::before {
     transform: translateX(-50%) scale(1);
 }
 
