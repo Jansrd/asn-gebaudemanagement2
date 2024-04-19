@@ -1,0 +1,35 @@
+.contact__component {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.contact__component__left p {
+    font-size: 35px;
+    padding: 15px 20px 15px 20px;
+    border-radius: 10px;
+    background-color: white;
+    transition: 0.3s;
+    transform: rotate(45deg);
+    margin-bottom: 20px;
+}
+
+.contact__component:hover #contact__component__icon {
+    background: none;
+    transform: scale(1.5);
+    color: rgb(10, 135, 31);
+}
+
+.contact__component__right__top h3 {
+    font-size: 19px;
+    margin-top: 10px;
+    letter-spacing: 1px;
+}
+
+.contact__component__right__bottom h5 {
+    font-size: 19px;
+    letter-spacing: 1px;
+    color: rgb(135, 135, 135);
+}

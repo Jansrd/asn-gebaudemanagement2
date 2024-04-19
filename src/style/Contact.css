@@ -1,0 +1,38 @@
+.contact {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.contact__content {
+    width: 60%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.contact__content h1 {
+    margin-top: 100px;
+    font-size: 36px;
+    letter-spacing: 2px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.contact__us {
+    margin-top: 80px;
+    width: 85%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 50px;
+}
+
+.contact__us__row__2 {
+    margin-bottom: 100px;
+}

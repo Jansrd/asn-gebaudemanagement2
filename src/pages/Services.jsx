@@ -1,0 +1,96 @@
+import React from 'react'
+import { LuConstruction } from "react-icons/lu";
+import { MdConstruction } from "react-icons/md";
+import { TbWindow } from "react-icons/tb";
+import { PiWarehouse } from "react-icons/pi";
+import { FaSwimmingPool } from "react-icons/fa";
+import { GiHighGrass } from "react-icons/gi";
+import { FaSnowplow } from "react-icons/fa";
+import { LiaBroomSolid } from "react-icons/lia";
+import { MdOutlineCleaningServices } from "react-icons/md";
+import ServiceComponent from '../components/ServiceComponent';
+import '../style/Services.css'
+
+const Services = () => {
+    return (
+        <div className="services">
+            <div className="services__content">
+                <h1>Dienstleistungen</h1>
+                <p id='services__subtitle'>Erfahren Sie mehr über unsere Angebote und Leistungen.</p>
+                <div className="service">
+                    <ServiceComponent
+                        icon={<LiaBroomSolid />}
+                        title="Unterhaltsreinigung"
+                        description="Ob Privatobjekt oder Gewerbe unsere
+                        Unterhaltsreinigung sorgt dafÜr, dass die 
+                        Innenflachen immer sauber sind."
+                    />
+                    <ServiceComponent
+                        icon={<MdOutlineCleaningServices />}
+                        title="Grundreinigung"
+                        description="Die Grundreinigung beginnt am  Ende der allgemeinen
+                        Unterhaltsreinigung. Hier entfernen wir hartnackige
+                        Verschmutzungen und erneuern den Aushärtefilm für 
+                        Ihre Bodenbeläge."
+                    />
+                    <ServiceComponent
+                        icon={<LuConstruction />}
+                        title="Baureiningung"
+                        description="Ob Privatobjekt oder Gewerbe unsere
+                        Unterhaltsreinigung sorgt dafÜr, dass die 
+                        Innenflachen immer sauber sind."
+                    />
+                    <ServiceComponent
+                        icon={<TbWindow />}
+                        title="Glasreinigung"
+                        description="Unser professionelles Team ist geschult und ausgerüstet, 
+                        um alle Fensterkonstruktionen zuverlässig zu reinigen. 
+                        Mit oder ohne Aufstiegshilfen, doppelt oder vierfach verglaste 
+                        Fenster, Deckenleuchten oder Glasdächer – wir garantieren
+                        freie Sicht."
+                    />
+                    <ServiceComponent
+                        icon={<PiWarehouse />}
+                        title="Fassadenreinigung"
+                        description="Eine Fassade ist die Visitenkarte einer Immobilie.
+                        Zahlreiche Umwelteinflüsse wie Regen, Sonne, Staub oder 
+                        Schmutz aus dem Straßenverkehr hinterlassen ihre Spuren. 
+                        Mit unserer Fassadenreinigung zeigen sich Fassaden wieder
+                        von ihrer besten Seite."
+                    />
+                    <ServiceComponent
+                        icon={<FaSwimmingPool />}
+                        title="Sonderrinigung"
+                        description="Zur Sonderreinigung gehört alles, was über
+                        die normale Reinigung hinausgeht – dazu 
+                        gehören besonders hartnäckige Verschmutzungen,
+                        schwer zugängliche Stellen und ein deutlich erhöhter
+                        Arbeitsaufwand."
+                    />
+                    <ServiceComponent
+                        icon={<GiHighGrass />}
+                        title="Gartenpflege"
+                        description="Wir bieten eine breite Palette von Gartenpflege-Leistungen an,
+                        die von professionellen Gärtnern sorgfältig ausgeführt werden,
+                        um sicherzustellen, dass Ihr Garten immer gut aussieht."
+                    />
+                    <ServiceComponent
+                        icon={<MdConstruction />}
+                        title="Hausmeister"
+                        description="Sie profitieren von einem persönlichen Betreuungsservice,
+                        der sich um die Pflege, Wartung und Kontrolle Ihrer Immobilie
+                        kümmert."
+                    />
+                    <ServiceComponent
+                        icon={<FaSnowplow />}
+                        title="Winterdienst"
+                        description="Unser Winterdienst ist 24 Stunden am Tag, 7 Tage
+                        die Woche immer für Sie da und sorgt für Verkehrssicherheit."
+                    />
+                </div>
+            </div>
+        </div>
+    )
+}
+
+export default Services
