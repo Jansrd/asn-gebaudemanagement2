@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React from 'react'
 import '../style/HomePage.css'
 import asn_logo_home_page from '../images/asn_logo_promo.png'
 import { IoMdArrowDown } from "react-icons/io";

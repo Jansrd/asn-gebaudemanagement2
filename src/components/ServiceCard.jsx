@@ -1,6 +1,5 @@
 import React from 'react'
 import '../style/ServiceCard.css'
-import { LiaBroomSolid } from "react-icons/lia";
 
 const ServiceCard = ({ icon, title, description }) => {
     return (

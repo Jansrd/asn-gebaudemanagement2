@@ -62,7 +62,6 @@
     cursor: pointer;
     position: relative;
     overflow: hidden;
-    animation: glow 2s infinite;
 }
 
 .home__page__start__right button::before {
@@ -79,28 +78,6 @@
 
 .home__page__start__right button:hover::before {
     transform: translateX(-50%) scale(1);
-}
-
-@keyframes glow {
-    0% {
-        box-shadow: 0 0 5px rgba(10, 135, 31, .0);
-    }
-
-    25% {
-        box-shadow: 0 0 5px rgba(10, 135, 31, .2);
-    }
-
-    50% {
-        box-shadow: 0 0 5px rgba(10, 135, 31, .4);
-    }
-
-    75% {
-        box-shadow: 0 0 5px rgba(10, 135, 31, .2);
-    }
-
-    100% {
-        box-shadow: 0 0 5px rgba(10, 135, 31, .0);
-    }
 }
 
 .home__page__service {

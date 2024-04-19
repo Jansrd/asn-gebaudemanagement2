@@ -23,6 +23,10 @@ const Header = () => {
 
     window.addEventListener('scroll', changeHeight)
 
+    const scrollUp = () => {
+        window.scrollTo(0, 0)
+    }
+
     return (
         <div className="header" id='header'>
             <div className="header__top">
@@ -40,10 +44,10 @@ const Header = () => {
                 <div style={{ transitionDuration: "0.2s" }} className={headerHeight ? "header__bottom__content2" : "header__bottom__content"}>
                     <img src={asn_logo} alt="" style={{ visibility: logoVisibility }} />
                     <ul className='navigation'>
-                        <li><Link to="/">Startseite</Link></li>
-                        <li><Link to="/über-uns">Über uns</Link></li>
-                        <li><Link to="/dienstleistungen">Dienstleistungen</Link></li>
-                        <li><Link to="/kontakt">Kontakt</Link></li>
+                        <li><Link to="/" onClick={scrollUp}>Startseite</Link></li>
+                        <li><Link to="/über-uns" onClick={scrollUp}>Über uns</Link></li>
+                        <li><Link to="/dienstleistungen" onClick={scrollUp}>Dienstleistungen</Link></li>
+                        <li><Link to="/kontakt" onClick={scrollUp}>Kontakt</Link></li>
                     </ul>
                 </div>
 
