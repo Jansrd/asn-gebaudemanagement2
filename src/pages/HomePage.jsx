@@ -190,9 +190,8 @@ const HomePage = () => {
                             eingetragener Betrieb und setzen auf modernste, umwelt- und materialschonende Reiniger für
                             eine hochwertige Reinigung auf höchstem Niveau. Unser Anspruch an uns selbst ist es, hoch
                             qualitative und verlässliche Gebäudereinigung und Haushaltshilfe zu leisten um Ihren
-                            Ansprüchen mehr als zu genügen! Wir sind stolz sagen zu können, dass wir unsere Kunden in
-                            Ulm oder darüber hinaus immer überzeugen können. Deshalb wollen wir uns immer wieder neue
-                            Maßstäbe setzen um die Gebäudeunterhaltung noch effektiver gestalten zu können.</p>
+                            Ansprüchen mehr als zu genügen!<span><a href='/über-uns'>...</a></span>
+                        </p>
                     </div>
                 </div>
                 <div className="home__page__contact">

@@ -1,4 +1,4 @@
-.service__card {
+.service__card a {
     width: 250px;
     height: 400px;
     display: flex;

@@ -161,6 +161,12 @@
     letter-spacing: 1px;
 }
 
+.home__page__about__right a {
+    letter-spacing: 2px;
+    text-decoration: underline;
+    color: rgb(10, 135, 31);
+}
+
 .home__page__contact {
     width: 100%;
     height: auto;
