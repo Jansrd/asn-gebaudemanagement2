@@ -8,6 +8,8 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import RouterScrollToTop from './RouterScrollToTop';
 import Imprint from './pages/Imprint';
+import Privacy from './pages/Privacy';
+
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
                     <Route path="/dienstleistungen" element={<Services />} />
                     <Route path="/kontakt" element={<Contact />} />
                     <Route path="/impressum" element={<Imprint />} />
+                    <Route path="/datenschutzerklärung" element={<Privacy />} />
+
                 </Routes>
             <Footer />
         </Router>

@@ -1,0 +1,72 @@
+.imprint {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+}
+
+.imprint__content {
+    width: 60%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 65px;
+}
+
+.imprint__content h1 {
+    margin-top: 100px;
+    font-size: 36px;
+    letter-spacing: 2px;
+}
+
+.imprint__company {
+    margin-top: 35px;
+}
+
+.imprint__company p {
+    line-height: 30px;
+}
+
+.imprint__employer {
+    margin-top: 35px;
+}
+
+.imprint__employer p {
+    line-height: 30px;
+}
+
+span {
+    font-weight: 700;
+}
+
+#imprint__email {
+    font-weight: 500;
+    color: royalblue;
+}
+
+.imprint__disclaimer {
+    margin-top: 50px;
+}
+
+.imprint__disclaimer h3 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    text-decoration: underline;
+}
+
+.imprint__disclaimer h4 {
+    font-size: 22px;
+}
+
+.imprint__disclaimer p {
+    margin-top: 30px;
+    margin-bottom: 35px;
+    text-align: justify;
+}
+
+.imprint__disclaimer a {
+    font-weight: 500;
+    color: royalblue;
+}

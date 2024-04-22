@@ -67,9 +67,9 @@ const Footer = () => {
                     <div className="footer__bottom">
                         <div className="footer__bottom__content">
                             <div className="footer__bottom__top">
-                                <Link to="/impressum" rel='noreferrer'>Impressum</Link>
+                                <Link to="/impressum" rel='noreferrer' onClick={scrollUp}>Impressum</Link>
                                 <div className="vh"></div>
-                                <Link>Datenschutzerklärung</Link>
+                                <Link to="/datenschutzerklärung" rel='noreferrer' onClick={scrollUp}>Datenschutzerklärung</Link>
                             </div>
                             <div className="footer__bottom__bottom">
                                 <p>Copyright&copy; 2024 ASN Gebäudemanagement.</p>

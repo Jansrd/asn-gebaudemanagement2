@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef, useState } from 'react'
 import '../style/HomePage.css'
 import asn_logo_home_page from '../images/asn_logo_promo.png'
 import { IoMdArrowDown } from "react-icons/io";
@@ -16,10 +16,9 @@ import { FaSnowplow } from "react-icons/fa";
 import { LiaBroomSolid } from "react-icons/lia";
 import { MdOutlineCleaningServices } from "react-icons/md";
 import { Link } from 'react-scroll';
+import emailjs from '@emailjs/browser';
 
 const HomePage = () => {
-
-
 
     var settings = {
         dots: true,
@@ -27,6 +26,32 @@ const HomePage = () => {
         speed: 500,
         slidesToShow: 4,
         slidesToScroll: 1,
+    };
+
+    const form = useRef()
+    const [check, setCheck] = useState(false)
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+        if (check === true) {
+            emailjs
+                .sendForm('service_yjdhi6n', 'template_pbhl5qa', form.current, {
+                    publicKey: 'zbBbwVR3R-ED_J2Q7',
+                })
+                .then(
+                    () => {
+                        console.log('SUCCESS!');
+                    },
+                    (error) => {
+                        console.log('FAILED...', error.text);
+                    },
+                );
+            e.target.reset()
+            alert("Nachricht wurde gesendet")
+        } else {
+            alert("Pin Ich habe die Datenschutzerklärung gelesen und werde es erneut versuchen! Danke schön.")
+        }
+        setCheck(false)
     };
 
     return (
@@ -43,13 +68,20 @@ const HomePage = () => {
                             <p>ihr partner rund um gebaude und garten.</p>
                         </div>
                         <div className="home__page__start__right__bottom">
-                            <Link to="test1" spy={true} smooth={true} offset={-260} duration={800}><button><IoMdArrowDown /></button></Link>
+                            <Link
+                                to="home_service"
+                                spy={true}
+                                smooth={true}
+                                offset={-260}
+                                duration={600}>
+                                <button><IoMdArrowDown /></button>
+                            </Link>
                         </div>
                     </div>
                 </div>
                 <div className="home__page__service">
                     <div className="home__page__service__top">
-                        <h1 id='test1'>Dienstleistungen</h1>
+                        <h1 id='home_service'>Dienstleistungen</h1>
                         <p id='home__page__services__subtitle'>Erfahren Sie mehr über unsere Angebote und Leistungen.</p>
                     </div>
                     <div className="home__page__service__bottom">
@@ -142,6 +174,65 @@ const HomePage = () => {
                                 />
                             </div>
                         </Slider>
+                    </div>
+                </div>
+                <div className="home__page__about">
+                    <div className="home__page__about__left">
+                        <h1>Warum wir?</h1>
+                        <p id='services__subtitle'>Entdecken Sie, was uns zu Ihrem idealen Partner macht.</p>
+                    </div>
+                    <div className="home__page__about__middle">
+                        <div className="vertical__line"></div>
+                    </div>
+
+                    <div className="home__page__about__right">
+                        <p>ASN-Gebäudemanagement steht für höchste Standards und erstklassigen Service. Wir sind ein
+                            eingetragener Betrieb und setzen auf modernste, umwelt- und materialschonende Reiniger für
+                            eine hochwertige Reinigung auf höchstem Niveau. Unser Anspruch an uns selbst ist es, hoch
+                            qualitative und verlässliche Gebäudereinigung und Haushaltshilfe zu leisten um Ihren
+                            Ansprüchen mehr als zu genügen! Wir sind stolz sagen zu können, dass wir unsere Kunden in
+                            Ulm oder darüber hinaus immer überzeugen können. Deshalb wollen wir uns immer wieder neue
+                            Maßstäbe setzen um die Gebäudeunterhaltung noch effektiver gestalten zu können.</p>
+                    </div>
+                </div>
+                <div className="home__page__contact">
+                    <div className="home__page__contact__top">
+                        <h1>Kontaktiere uns</h1>
+                        <p id='services__subtitle'>Kontaktieren sie uns und wir werden uns bald bei ihnen melden.</p>
+                    </div>
+                    <div className="home__page__contact__middle">
+                        <iframe
+                            title='maps'
+                            width="100%"
+                            height="550"
+                            frameborder="0"
+                            scrolling="no"
+                            marginheight="0"
+                            marginwidth="0"
+                            src="https://maps.google.com/maps?width=720&amp;height=600&amp;hl=en&amp;q=Eckstra%C3%9Fe%207%2089250%20Senden+(ASN%20Geb%C3%A4udemanagement)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                            <a href="https://www.gps.ie/">gps tracker sport</a>
+                        </iframe>
+                    </div>
+                    <div className="home__page__contact__bottom">
+                        <form ref={form} className='form' onSubmit={sendEmail}>
+                            <div className="form__content">
+                                <div className="form__top">
+                                    <input id='input__name' type='text' placeholder='Name' name='user_name' required />
+                                    <input type='email' placeholder='E-mail-adresse' name='user_email' required />
+                                </div>
+                                <div className="form__middle">
+                                    <textarea className='textarea' type='text' placeholder='Nachricht' name='message' required />
+                                </div>
+                                <div className="form__bottom">
+                                    <div className="checkbox">
+                                        <input type="checkbox" checked={check} onChange={() => setCheck(!check)} />
+                                        <p>Ich habe die datenschutzerklarung zur kenntnis genommen.</p>
+                                    </div>
+                                    <button type='submit' className='send__btn'>Absenden</button>
+                                </div>
+                            </div>
+
+                        </form>
                     </div>
                 </div>
             </div>

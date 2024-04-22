@@ -19,6 +19,7 @@ const Services = () => {
                 <p id='services__subtitle'>Erfahren Sie mehr über unsere Angebote und Leistungen.</p>
                 <div className="service">
                     <ServiceComponent
+                        id="unterhaltsreinigung"
                         icon={<LiaBroomSolid />}
                         title="Unterhaltsreinigung"
                         description="Ob Privatobjekt oder Gewerbe unsere
