@@ -69,6 +69,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 
 
@@ -113,4 +114,16 @@
 
 .navigation li a:hover::before {
     transform: translateX(-50%) scale(1);
+}
+
+.mobile__menu__show {
+    display: none;
+    color: rgb(10, 135, 31);
+    font-size: 32px;
+}
+
+.mobile__menu__exit {
+    display: none;
+    color: rgb(10, 135, 31);
+    font-size: 40px;
 }

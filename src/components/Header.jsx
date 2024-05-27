@@ -5,11 +5,14 @@ import { GrInstagram } from "react-icons/gr";
 import { FaLinkedin } from "react-icons/fa";
 import asn_logo from '../images/asn_logo.png'
 import { Link } from 'react-router-dom'
+import { GiHamburgerMenu } from "react-icons/gi";
+import { IoCloseSharp } from "react-icons/io5";
 
 const Header = () => {
 
     const [headerHeight, setHeaderHeight] = useState(false);
     const [logoVisibility, setLogoVisibility] = useState('visible')
+    const [clicked, setClicked] = useState(false)
 
     const changeHeight = () => {
         if (window.scrollY > 0) {
@@ -27,12 +30,18 @@ const Header = () => {
         window.scrollTo(0, 0)
     }
 
+    const handleClick = () => {
+        setClicked(!clicked)
+    }
+
+
+
     return (
         <div className="header" id='header'>
             <div className="header__top">
                 <div className="header__top__content">
                     <p>Mon - Sam 8.00 - 17.00. Sonntag <span id='closed'>GESCHLOSSEN</span></p>
-                    <p>Kontaktiere uns: <span id='phone'>+49 17684560147</span></p>
+                    <p className='header__top__kontakt'>Kontaktiere uns: <span id='phone'>+49 17684560147</span></p>
                     <div className="header__top__stay__conected">
                         <FaFacebookSquare id='facebook' />
                         <GrInstagram id='instagram' />
@@ -49,6 +58,21 @@ const Header = () => {
                         <li><Link to="/dienstleistungen" onClick={scrollUp}>Dienstleistungen</Link></li>
                         <li><Link to="/kontakt" onClick={scrollUp}>Kontakt</Link></li>
                     </ul>
+                    {
+                        clicked ? <div className="mobile__menu">
+                            <li><Link to="/" onClick={scrollUp}>Startseite</Link></li>
+                            <li><Link to="/über-uns" onClick={scrollUp}>Über uns</Link></li>
+                            <li><Link to="/dienstleistungen" onClick={scrollUp}>Dienstleistungen</Link></li>
+                            <li><Link to="/kontakt" onClick={scrollUp}>Kontakt</Link></li>
+                        </div> :
+                            null
+                    }
+                    {
+                        !clicked ?
+                            <GiHamburgerMenu className='mobile__menu__show' onClick={handleClick} />
+                            :
+                            <IoCloseSharp className='mobile__menu__exit' onClick={handleClick} />
+                    }
                 </div>
 
             </div>

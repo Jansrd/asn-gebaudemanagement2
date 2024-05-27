@@ -43,7 +43,7 @@ span {
 
 #imprint__email {
     font-weight: 500;
-    color: royalblue;
+    color: rgb(10, 135, 31)
 }
 
 .imprint__disclaimer {
@@ -54,6 +54,7 @@ span {
     font-size: 28px;
     margin-bottom: 30px;
     text-decoration: underline;
+    text-decoration-color: rgb(10, 135, 31);
 }
 
 .imprint__disclaimer h4 {
@@ -68,5 +69,10 @@ span {
 
 .imprint__disclaimer a {
     font-weight: 500;
-    color: royalblue;
+    color: rgb(10, 135, 31);
+    text-decoration: underline;
+}
+
+.imprint__disclaimer a:hover {
+    text-decoration: none;
 }

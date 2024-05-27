@@ -32,6 +32,13 @@
     background-color: rgb(10, 135, 31);
 }
 
+.vertical__line2 {
+    width: 2px;
+    height: 180px;
+    background-color: rgb(10, 135, 31);
+}
+
+
 .home__page__start__right {
     height: 250px;
     display: flex;
@@ -127,6 +134,7 @@
 .slick-dots li button:before {
     color: rgb(10, 135, 31) !important;
 }
+
 
 .home__page__about {
     width: 100%;

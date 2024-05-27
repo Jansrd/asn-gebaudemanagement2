@@ -98,8 +98,8 @@ const Imprint = () => {
                         diesem Fall gegebenenfalls nicht sämtliche Funktionen dieser Website voll umfänglich nutzen können. Durch die Nutzung
                         dieser Website erklären Sie sich mit der Bearbeitung der über Sie erhobenen Daten durch Google in der zuvor beschriebenen
                         Art und Weise und zu dem zuvor benannten Zweck einverstanden.Website Impressum erstellt durch
-                        <span><a href="https://www.impressum-generator.de/" target="_blank" rel="noreferrer" >impressum-generator.de</a></span>
-                        von der <span><a href="https://www.kanzlei-hasselbach.de/" target="_blank" rel="noreferrer" >Kanzlei Hasselbach</a></span>
+                        <span><a href="https://www.impressum-generator.de/" target="_blank" rel="noreferrer" > impressum-generator.de </a></span>
+                        von der <span><a href="https://www.kanzlei-hasselbach.de/" target="_blank" rel="noreferrer" >Kanzlei Hasselbach.</a></span>
                     </p>
                 </div>
             </div>

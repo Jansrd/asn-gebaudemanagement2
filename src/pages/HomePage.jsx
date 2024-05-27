@@ -26,6 +26,162 @@ const HomePage = () => {
         speed: 500,
         slidesToShow: 4,
         slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        responsive: [
+            {
+                breakpoint: 1920,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 1079,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    centerMode: true,
+                    "centerPadding": "290px"
+                }
+            },
+            {
+                breakpoint: 1050,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    centerMode: true,
+                    "centerPadding": "260px"
+                }
+            },
+            {
+                breakpoint: 985,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    centerMode: true,
+                    "centerPadding": "230px"
+                }
+            },
+            {
+                breakpoint: 910,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    centerMode: true,
+                    "centerPadding": "200px"
+                }
+            },
+            {
+                breakpoint: 835,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    centerMode: true,
+                    "centerPadding": "170px"
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    centerMode: true,
+                    "centerPadding": "175px"
+                }
+            },
+            {
+                breakpoint: 640,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    centerMode: true,
+                    "centerPadding": "100px"
+                }
+            },
+            {
+                breakpoint: 590,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    centerMode: true,
+                    "centerPadding": "90px"
+                }
+            },
+            {
+                breakpoint: 560,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    centerMode: true,
+                    "centerPadding": "80px"
+                }
+            },
+            {
+                breakpoint: 530,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    centerMode: true,
+                    "centerPadding": "70px"
+                }
+            },
+            {
+                breakpoint: 500,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    centerMode: true,
+                    "centerPadding": "60px"
+                }
+            },
+            {
+                breakpoint: 470,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    centerMode: true,
+                    "centerPadding": "50px"
+                }
+            },
+            {
+                breakpoint: 440,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    centerMode: true,
+                    "centerPadding": "40px"
+                }
+            },
+            {
+                breakpoint: 410,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    centerMode: true,
+                    "centerPadding": "30px"
+                }
+            },
+            {
+                breakpoint: 380,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    centerMode: true,
+                    "centerPadding": "20px"
+                }
+            },
+            {
+                breakpoint: 360,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    centerMode: true,
+                    "centerPadding": "10px"
+                }
+            },
+
+        ]
     };
 
     const form = useRef()
@@ -182,7 +338,7 @@ const HomePage = () => {
                         <p id='services__subtitle'>Entdecken Sie, was uns zu Ihrem idealen Partner macht.</p>
                     </div>
                     <div className="home__page__about__middle">
-                        <div className="vertical__line"></div>
+                        <div className="vertical__line2"></div>
                     </div>
 
                     <div className="home__page__about__right">
@@ -190,7 +346,7 @@ const HomePage = () => {
                             eingetragener Betrieb und setzen auf modernste, umwelt- und materialschonende Reiniger für
                             eine hochwertige Reinigung auf höchstem Niveau. Unser Anspruch an uns selbst ist es, hoch
                             qualitative und verlässliche Gebäudereinigung und Haushaltshilfe zu leisten um Ihren
-                            Ansprüchen mehr als zu genügen!<span><a href='/über-uns'>...</a></span>
+                            Ansprüchen mehr als zu genügen!<span><a href='/über-uns'> mehr lesen..</a></span>
                         </p>
                     </div>
                 </div>

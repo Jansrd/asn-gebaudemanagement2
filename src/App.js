@@ -9,6 +9,7 @@ import Contact from './pages/Contact';
 import RouterScrollToTop from './RouterScrollToTop';
 import Imprint from './pages/Imprint';
 import Privacy from './pages/Privacy';
+import '../src/Responsive.css'
 
 
 function App() {

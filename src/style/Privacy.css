@@ -21,9 +21,71 @@
     letter-spacing: 2px;
 }
 
+.privacy__content h2 {
+    text-decoration: underline;
+    text-decoration-color: rgb(10, 135, 31);
+}
+
 
 .privacy__content p {
     margin-top: 30px;
     margin-bottom: 35px;
     text-align: justify;
+}
+
+.definitions p {
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.privacy__content ul li {
+    margin-left: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    list-style: none;
+}
+
+.privacy__content ul {
+    counter-reset: list;
+    margin-bottom: 50px;
+}
+
+.privacy__content ul>li:before {
+    content: counter(list, lower-alpha) ") ";
+    counter-increment: list;
+}
+
+.privacy__company {
+    margin-bottom: 50px;
+}
+
+.privacy__company p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.right p {
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.right__list {
+    margin-left: 50px;
+}
+
+.right__list p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.privacy__content a {
+    font-weight: 500;
+    color: rgb(10, 135, 31);
+    text-decoration: underline;
+}
+
+.privacy__content a:hover {
+    text-decoration: none;
 }
