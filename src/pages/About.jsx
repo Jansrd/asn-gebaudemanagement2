@@ -10,7 +10,7 @@ const About = () => {
         <div className="about">
             <div className="about__content">
                 <h1>Warum wir?</h1>
-                <p id='services__subtitle'>Entdecken Sie, was uns zu Ihrem idealen Partner macht.</p>
+                <p id='about__subtitle'>Entdecken Sie, was uns zu Ihrem idealen Partner macht.</p>
                 <div className="about__top">
                     <AboutComponent
                         icon={<PiBroom />}
@@ -26,7 +26,7 @@ const About = () => {
                     />
                 </div>
                 <div className="about__bottom">
-                    <p>ASN-Gebäudemanagement steht für höchste Standards und erstklassigen Service. Wir sind ein
+                    <p id='about__text'>ASN-Gebäudemanagement steht für höchste Standards und erstklassigen Service. Wir sind ein
                         eingetragener Betrieb und setzen auf modernste, umwelt- und materialschonende Reiniger für
                         eine hochwertige Reinigung auf höchstem Niveau. Unser Anspruch an uns selbst ist es, hoch
                         qualitative und verlässliche Gebäudereinigung und Haushaltshilfe zu leisten um Ihren

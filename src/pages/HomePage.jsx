@@ -27,7 +27,7 @@ const HomePage = () => {
         slidesToShow: 4,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 4000,
+        autoplaySpeed: 3300,
         responsive: [
             {
                 breakpoint: 1920,
@@ -151,6 +151,15 @@ const HomePage = () => {
                     slidesToScroll: 1,
                     centerMode: true,
                     "centerPadding": "40px"
+                }
+            },
+            {
+                breakpoint: 430,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    centerMode: true,
+                    "centerPadding": "30px"
                 }
             },
             {

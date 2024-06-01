@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import '../style/Header.css'
-import { FaFacebookSquare } from "react-icons/fa";
+//import { FaFacebookSquare } from "react-icons/fa";
 import { GrInstagram } from "react-icons/gr";
-import { FaLinkedin } from "react-icons/fa";
+//import { FaLinkedin } from "react-icons/fa";
 import asn_logo from '../images/asn_logo.png'
 import { Link } from 'react-router-dom'
 import { GiHamburgerMenu } from "react-icons/gi";
@@ -30,6 +30,11 @@ const Header = () => {
         window.scrollTo(0, 0)
     }
 
+    const mobileScrollUp = () => {
+        window.scrollTo(0, 0)
+        setClicked(!clicked)
+    }
+
     const handleClick = () => {
         setClicked(!clicked)
     }
@@ -43,9 +48,9 @@ const Header = () => {
                     <p>Mon - Sam 8.00 - 17.00. Sonntag <span id='closed'>GESCHLOSSEN</span></p>
                     <p className='header__top__kontakt'>Kontaktiere uns: <span id='phone'>+49 17684560147</span></p>
                     <div className="header__top__stay__conected">
-                        <FaFacebookSquare id='facebook' />
-                        <GrInstagram id='instagram' />
-                        <FaLinkedin id='linkedin' />
+                        {/*<a href=""><FaFacebookSquare id='facebook' /></a> */}
+                        <a href="https://www.instagram.com/asn_gebaeudemanagement/" target='_blank' rel="noreferrer"><GrInstagram id='instagram' /></a>
+                        {/* <a href=""><FaLinkedin id='linkedin' /></a>*/} 
                     </div>
                 </div>
             </div>
@@ -60,10 +65,12 @@ const Header = () => {
                     </ul>
                     {
                         clicked ? <div className="mobile__menu">
-                            <li><Link to="/" onClick={scrollUp}>Startseite</Link></li>
-                            <li><Link to="/über-uns" onClick={scrollUp}>Über uns</Link></li>
-                            <li><Link to="/dienstleistungen" onClick={scrollUp}>Dienstleistungen</Link></li>
-                            <li><Link to="/kontakt" onClick={scrollUp}>Kontakt</Link></li>
+                            <ul>
+                                <li><Link to="/" onClick={mobileScrollUp}>Startseite</Link></li>
+                                <li><Link to="/über-uns" onClick={mobileScrollUp}>Über uns</Link></li>
+                                <li><Link to="/dienstleistungen" onClick={mobileScrollUp}>Dienstleistungen</Link></li>
+                                <li><Link to="/kontakt" onClick={mobileScrollUp}>Kontakt</Link></li>
+                            </ul>
                         </div> :
                             null
                     }
@@ -74,7 +81,6 @@ const Header = () => {
                             <IoCloseSharp className='mobile__menu__exit' onClick={handleClick} />
                     }
                 </div>
-
             </div>
         </div>
     )

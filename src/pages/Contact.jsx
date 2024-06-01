@@ -11,7 +11,7 @@ const Contact = () => {
         <div className="contact">
             <div className="contact__content">
                 <h1>Kontaktiere uns</h1>
-                <p id='services__subtitle'>Kontaktieren sie uns und wir werden uns bald bei ihnen melden.</p>
+                <p id="contact__subtitle">Kontaktieren sie uns und wir werden uns bald bei ihnen melden.</p>
                 <div className="contact__us">
                     <a rel='noreferrer' href='https://www.google.com/maps/place/Eckstra%C3%9Fe+7,+89250+Senden,+Germany/@48.3273409,10.0266518,17z/data=!3m1!4b1!4m6!3m5!1s0x479960f39c166e1b:0xb005c6235cb46f6a!8m2!3d48.3273374!4d10.0292267!16s%2Fg%2F11c24t_m6z?entry=ttu' target='_blank'>
                         <ContactComponent

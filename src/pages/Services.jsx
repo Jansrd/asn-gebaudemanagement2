@@ -16,7 +16,7 @@ const Services = () => {
         <div className="services">
             <div className="services__content">
                 <h1>Dienstleistungen</h1>
-                <p id='services__subtitle'>Erfahren Sie mehr über unsere Angebote und Leistungen.</p>
+                <p id='services__subtitle2'>Erfahren Sie mehr über unsere Angebote und Leistungen.</p>
                 <div className="service">
                     <ServiceComponent
                         id="unterhaltsreinigung"

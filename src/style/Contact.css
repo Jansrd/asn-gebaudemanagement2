@@ -36,3 +36,9 @@ a {
 .contact__us__row__2 {
     margin-bottom: 100px;
 }
+
+#contact__subtitle {
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 2px;
+}

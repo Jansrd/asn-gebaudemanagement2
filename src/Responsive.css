@@ -21,8 +21,6 @@
     }
 }
 
-@media screen and (max-width: 1920px) {}
-
 @media screen and (max-width: 1079px) and (min-width: 768px) {
     .header__top__stay__conected {
         display: none;
@@ -351,6 +349,7 @@
     #services__subtitle {
         font-size: 16px;
         width: 80%;
+        text-align: center;
     }
 
     .home__page__about__left h1 {
@@ -360,4 +359,118 @@
     .home__page__contact__top h1 {
         font-size: 30px;
     }
+
+    .about__content {
+        width: 80%;
+    }
+
+    .about__content h1 {
+        font-size: 30px;
+    }
+
+    #about__subtitle {
+        font-size: 16px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .about__top {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 80px;
+        justify-content: center;
+    }
+
+    .about__bottom {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #about__text {
+        text-align: justify;
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .about__component__top p {
+        font-size: 35px;
+    }
+
+    .about__component__bottom h3 {
+        font-size: 16px;
+    }
+
+    .services__content h1 {
+        font-size: 30px;
+    }
+
+    #services__subtitle2 {
+        font-size: 16px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .service {
+        grid-template-columns: 1fr;
+        gap: 80px;
+    }
+
+    .service__component__top p {
+        font-size: 35px;
+    }
+
+    .service__component__bottom h3 {
+        font-size: 16px;
+    }
+
+    .service__component__bottom p {
+        font-size: 14px;
+        text-align: justify;
+    }
+
+    .contact__content h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    #contact__subtitle {
+        font-size: 16px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .contact__component__left p {
+        font-size: 35px;
+    }
+
+    .contact__us {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 80px;
+    }
+
+    .contact__component__right__top h3 {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .contact__component__right__bottom h5 {
+        font-size: 16px;
+        text-align: center;
+    }
+    .privacy__content {
+        width: 80%;
+    }
+
+    .privacy__content h1 {
+        font-size: 30px;
+    }
+
+    .privacy__content h2 {
+        font-size: 26px;
+    }
+
+    .imprint__content {
+        width: 80%;
+    }
+
 }

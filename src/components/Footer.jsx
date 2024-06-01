@@ -1,9 +1,9 @@
 import React from 'react'
 import '../style/Footer.css'
 import { Link } from 'react-router-dom'
-import { FaFacebookSquare } from "react-icons/fa";
+//import { FaFacebookSquare } from "react-icons/fa";
 import { GrInstagram } from "react-icons/gr";
-import { FaLinkedin } from "react-icons/fa";
+//import { FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
 
@@ -35,9 +35,9 @@ const Footer = () => {
                             <div className="footer__top__left__bottom">
                                 <p>Verbinde dich mit uns:</p>
                                 <div className="header__top__stay__conected__footer">
-                                    <FaFacebookSquare id='facebook' />
-                                    <GrInstagram id='instagram' />
-                                    <FaLinkedin id='linkedin' />
+                                    {/*<a href=""><FaFacebookSquare id='facebook' /></a> */}
+                                    <a href="https://www.instagram.com/asn_gebaeudemanagement/" target='_blank' rel="noreferrer"><GrInstagram id='instagram' /></a>
+                                    {/* <a href=""><FaLinkedin id='linkedin' /></a>*/} 
                                 </div>
                             </div>
                         </div>
@@ -45,15 +45,15 @@ const Footer = () => {
                             <div className="footer__top__right__right">
                                 <h3>Deinstleistungen</h3>
                                 <ul>
-                                    <li><Link>Unterhaltsreinigung</Link></li>
-                                    <li><Link>Grundreinigung</Link></li>
-                                    <li><Link>Baureinigung</Link></li>
-                                    <li><Link>Glasreinigung</Link></li>
-                                    <li><Link>Fassadenreinigung</Link></li>
-                                    <li><Link>Hausemeister</Link></li>
-                                    <li><Link>Gartenpflege</Link></li>
-                                    <li><Link>Sonderreinigung</Link></li>
-                                    <li><Link>Winterdienst</Link></li>
+                                    <li><Link to="/dienstleistungen" onClick={scrollUp}>Unterhaltsreinigung</Link></li>
+                                    <li><Link to="/dienstleistungen" onClick={scrollUp}>Grundreinigung</Link></li>
+                                    <li><Link to="/dienstleistungen" onClick={scrollUp}>Baureinigung</Link></li>
+                                    <li><Link to="/dienstleistungen" onClick={scrollUp}>Glasreinigung</Link></li>
+                                    <li><Link to="/dienstleistungen" onClick={scrollUp}>Fassadenreinigung</Link></li>
+                                    <li><Link to="/dienstleistungen" onClick={scrollUp}>Hausemeister</Link></li>
+                                    <li><Link to="/dienstleistungen" onClick={scrollUp}>Gartenpflege</Link></li>
+                                    <li><Link to="/dienstleistungen" onClick={scrollUp}>Sonderreinigung</Link></li>
+                                    <li><Link to="/dienstleistungen" onClick={scrollUp}>Winterdienst</Link></li>
                                 </ul>
                             </div>
                             <div className="footer__top__right__left">
