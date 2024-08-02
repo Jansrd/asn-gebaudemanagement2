@@ -1,0 +1,90 @@
+.privacy {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: left;
+}
+
+.privacy-content {
+  width: 60%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 65px;
+}
+
+.privacy-content h1 {
+  margin-top: 100px;
+  font-size: 36px;
+  letter-spacing: 2px;
+}
+
+.privacy-content h2 {
+  text-decoration: underline;
+  text-decoration-color: rgb(10, 135, 31);
+}
+
+.privacy-content p {
+  margin-top: 30px;
+  margin-bottom: 35px;
+  text-align: justify;
+}
+
+.definitions p {
+  margin-left: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.privacy-content ul li {
+  margin-left: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  list-style: none;
+}
+
+.privac-content ul {
+  counter-reset: list;
+  margin-bottom: 50px;
+}
+
+.privacy-content ul > li:before {
+  content: counter(list, lower-alpha) ") ";
+  counter-increment: list;
+}
+
+.privacy-company {
+  margin-bottom: 50px;
+}
+
+.privacy-company p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.right p {
+  margin-left: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.right-list {
+  margin-left: 50px;
+}
+
+.right-list p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.privacy-content a {
+  font-weight: 500;
+  color: rgb(10, 135, 31);
+  text-decoration: underline;
+}
+
+.privacy-content a:hover {
+  text-decoration: none;
+}

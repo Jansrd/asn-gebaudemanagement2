@@ -1,0 +1,78 @@
+.imprint {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: left;
+}
+
+.imprint-content {
+  width: 60%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 65px;
+}
+
+.imprint-content h1 {
+  margin-top: 100px;
+  font-size: 36px;
+  letter-spacing: 2px;
+}
+
+.imprint-company {
+  margin-top: 35px;
+}
+
+.imprint-company p {
+  line-height: 30px;
+}
+
+.imprint-employer {
+  margin-top: 35px;
+}
+
+.imprint-employer p {
+  line-height: 30px;
+}
+
+span {
+  font-weight: 700;
+}
+
+#imprint-email {
+  font-weight: 500;
+  color: rgb(10, 135, 31);
+}
+
+.imprint-disclaimer {
+  margin-top: 50px;
+}
+
+.imprint-disclaimer h3 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  text-decoration: underline;
+  text-decoration-color: rgb(10, 135, 31);
+}
+
+.imprint-disclaimer h4 {
+  font-size: 22px;
+}
+
+.imprint-disclaimer p {
+  margin-top: 30px;
+  margin-bottom: 35px;
+  text-align: justify;
+}
+
+.imprint-disclaimer a {
+  font-weight: 500;
+  color: rgb(10, 135, 31);
+  text-decoration: underline;
+}
+
+.imprint-disclaimer a:hover {
+  text-decoration: none;
+}

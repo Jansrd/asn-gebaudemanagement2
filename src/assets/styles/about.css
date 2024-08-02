@@ -1,0 +1,33 @@
+.about {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.about-content {
+  width: 60%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.about-content-top {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  width: 85%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.about-content-bottom {
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin-bottom: 100px;
+}

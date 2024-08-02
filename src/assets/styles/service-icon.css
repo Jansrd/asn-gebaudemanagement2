@@ -1,0 +1,59 @@
+.service-icon {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.service-icon-top p {
+  font-size: 40px;
+  padding: 15px 20px 15px 20px;
+  border-radius: 10px;
+  background-color: white;
+  transition: 0.3s;
+  transform: rotate(45deg);
+  margin-bottom: 20px;
+}
+
+.service-icon:hover .service-icon-top p {
+  background: none;
+  transform: scale(1.5);
+  color: rgb(10, 135, 31);
+}
+.service-icon-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+}
+
+.service-icon-bottom h3 {
+  width: 200px;
+  text-align: center;
+  font-size: 18px;
+  margin-top: 10px;
+  line-height: 25px;
+  letter-spacing: 2px;
+}
+
+.service-icon-bottom p {
+  text-align: center;
+  letter-spacing: 1px;
+}
+.service-icon-bottom-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.service-icon-bottom-text h3 {
+  font-size: 19px;
+  letter-spacing: 1px;
+  margin-top: -40px;
+  width: 100%;
+}
+.service-icon-bottom-text h5 {
+  font-size: 19px;
+  letter-spacing: 1px;
+  color: rgb(135, 135, 135);
+}
