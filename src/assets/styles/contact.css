@@ -18,10 +18,10 @@
 
 .contact-content-top {
   margin-top: 80px;
-  margin-bottom: 80px;
+  margin-bottom: 50px;
   width: 100%;
+  column-gap: 50px;
   row-gap: 60px;
-  column-gap: 20px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
@@ -29,8 +29,4 @@
 .contact-content-top a {
   text-decoration: none;
   color: rgb(0, 0, 0);
-}
-
-.contact-content-grid-row-2 {
-  margin-bottom: 100px;
 }

@@ -19,7 +19,7 @@ export const services = [
     id: 2,
     icon: <MdOutlineCleaningServices />,
     title: "Grundreinigung",
-    text: "Die Grundreinigung beginnt am  Ende der allgemeinenUnterhaltsreinigung. Hier entfernen wir hartnackigeVerschmutzungen und erneuern den Aushärtefilm für Ihre Bodenbeläge.",
+    text: "Die Grundreinigung beginnt am  Ende der allgemeinen Unterhaltsreinigung. Hier entfernen wir hartnackigeVerschmutzungen und erneuern den Aushärtefilm für Ihre Bodenbeläge.",
   },
   {
     id: 3,

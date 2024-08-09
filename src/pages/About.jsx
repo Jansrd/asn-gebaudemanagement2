@@ -23,7 +23,7 @@ const About = () => {
             icon={<LiaSprayCanSolid />}
             title="Umweltbewusste Reinigung"
           />
-          <ServiceIcon icon={<BiMedal />} title="Zufriedenheit garantiert" />
+          <ServiceIcon icon={<BiMedal />} title="Zufriedenheit Garantiert" />
         </div>
         <div className="about-content-bottom" id="about-content-bottom">
           <p>

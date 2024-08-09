@@ -18,10 +18,9 @@
 
 .services-content-top {
   margin-top: 80px;
-  margin-bottom: 80px;
   width: 100%;
+  column-gap: 50px;
   row-gap: 60px;
-  column-gap: 20px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }

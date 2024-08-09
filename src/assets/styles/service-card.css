@@ -1,4 +1,4 @@
-.service-card a {
+/*.service-card a {
   width: 250px;
   height: 400px;
   display: flex;
@@ -49,6 +49,71 @@
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 7;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+*/
+
+.service-card a {
+  width: 400px;
+  height: 180px;
+  display: flex;
+  border: 1px solid rgb(10, 135, 31);
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.service-card a:hover .service-card-left p {
+  background: none;
+  transform: scale(1.5);
+  color: rgb(10, 135, 31);
+}
+
+.service-card-left {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.service-card-left p {
+  font-size: 40px;
+  color: rgb(0, 0, 0);
+  transition: 0.3s;
+  transform: rotate(45deg);
+}
+
+.service-card-right {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  align-items: left;
+  row-gap: 5px;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.service-card-right h3 {
+  color: rgb(0, 0, 0);
+  letter-spacing: 1px;
+  font-size: 20px;
+  text-align: left;
+}
+
+.service-card-right p {
+  color: rgb(0, 0, 0);
+  text-align: left;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
   overflow: hidden;
   text-overflow: ellipsis;
 }

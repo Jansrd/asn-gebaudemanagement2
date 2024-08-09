@@ -4,7 +4,7 @@ export default function HeaderTop() {
   return (
     <div className="header-top">
       <div className="header-top-content" id="header-top-content">
-        <p>
+        <p id="mon-sam">
           Mon - Sam 8.00 - 17.00 Sonntag <span id="closed">GESCHLOSSEN</span>
         </p>
         <p id="phone">

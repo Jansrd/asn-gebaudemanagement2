@@ -1,4 +1,5 @@
 import React from "react";
+import "../assets/styles/title.css";
 
 const Title = ({ title, subtitle }) => {
   return (

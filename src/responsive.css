@@ -1,144 +1,181 @@
-@media screen and (max-width: 1079px) and (min-width: 768px) {
-  /*HEADER*/
-
-  #phone {
-    display: none;
-  }
-  #header-top-content {
-    width: 80%;
-  }
-  .header-bottom img {
-    display: none;
-  }
-
-  #header-bottom-content {
-    width: 80%;
-    justify-content: right;
-  }
-
-  #navigation {
-    width: 100%;
-  }
-
-  #navigation li a {
-    margin-left: 45px;
-  }
-
-  /*HOME*/
-  #home-content {
-    width: 80%;
-  }
-  .home-content-start-left img {
-    display: none;
-  }
-
-  #vertical-line-2 {
-    height: 290px;
-  }
-
-  #home-contact-bottom {
-    width: 80%;
-  }
-  /*FOOTER*/
-  #footer-content {
-    width: 80%;
+@media screen and (max-width: 1620px) {
+  /*footer*/
+  .footer-content {
+    justify-content: center;
+    align-items: center;
   }
   .footer-top {
     flex-direction: column;
     gap: 20px;
   }
+
+  #footer-top-left {
+    width: 100%;
+  }
+
   #footer-top-right {
+    margin-top: 20px;
     flex-direction: column;
     width: 100%;
   }
+
   .footer-top-right-left p {
     width: 200%;
   }
-  .footer-bottom {
-    margin-top: -150px;
-  }
+}
 
-  /*RIGHTS*/
-  #imprint-content {
+@media screen and (max-width: 1320px) and (min-width: 1201px) {
+  /*header*/
+
+  #header-top-content {
+    width: 80%;
+  }
+  #header-bottom-content {
+    width: 80%;
+  }
+  #header-bottom-content-on-scroll {
     width: 80%;
   }
 
-  #privacy-content {
+  /*home-page*/
+  #services-home {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #home-content {
     width: 80%;
   }
+  /*footer*/
+  #footer-content {
+    width: 80%;
+  }
+  #footer-top-left {
+    width: 100%;
+  }
 
-  /*ABOUT*/
+  /*about*/
   #about-content {
     width: 80%;
   }
 
-  #about-content-top {
-    grid-template-columns: repeat(1, 1fr);
-    row-gap: 40px;
-  }
-
-  #about-content-bottom {
-    width: 100%;
-  }
-
-  .about-content-bottom p {
-    text-align: justify;
-  }
-
-  /*SERVICES*/
+  /*services*/
   #services-content {
     width: 80%;
   }
 
-  #services-content-top {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  #service-icon-bottom p {
-    text-align: center;
-  }
-
-  #imprint-content {
-    width: 90%;
-  }
-
-  #privacy-content {
-    width: 90%;
-  }
-
-  /*CONTACT*/
+  /*contact*/
   #contact-content {
     width: 80%;
   }
 
-  #contact-content-top {
-    grid-template-columns: repeat(1, 1fr);
-    row-gap: 80px;
+  /*imprint*/
+  #imprint-content {
+    width: 80%;
+  }
+
+  /*privacy*/
+  #privacy-content {
+    width: 80%;
   }
 }
 
-@media screen and (max-width: 640px) and (min-width: 360px) {
-  /*HEADER*/
-  #phone {
-    display: none;
-  }
-  #instagram {
-    display: none;
-  }
+@media screen and (max-width: 1200px) and (min-width: 1025px) {
+  /*header*/
+
   #header-top-content {
-    width: 90%;
+    width: 80%;
+  }
+  #header-bottom-content {
+    width: 80%;
+  }
+  #header-bottom-content-on-scroll {
+    width: 80%;
+  }
+
+  /*home-page*/
+  .home-content-start-left img {
+    display: none;
+  }
+  #services-home {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #home-content {
+    width: 80%;
+  }
+
+  #vertical-line-2 {
+    height: 220px;
+  }
+
+  /*about*/
+  #about-content {
+    width: 80%;
+  }
+  #about-content-bottom {
+    text-align: justify;
+  }
+
+  /*services*/
+  #services-content {
+    width: 80%;
+  }
+  #service-icon-bottom-text {
+    width: 120%;
+  }
+
+  /*contact*/
+  #contact-content {
+    width: 80%;
+  }
+
+  /*footer*/
+  #footer-content {
+    width: 80%;
+  }
+  .footer-content {
     justify-content: center;
+    align-items: center;
   }
-  .header-top-content p {
-    font-size: 14px;
+  .footer-top {
+    flex-direction: column;
+    gap: 20px;
   }
-  #header-bottom {
+
+  #footer-top-left {
+    width: 100%;
+  }
+
+  #footer-top-right {
+    margin-top: 20px;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .footer-top-right-left p {
+    width: 200%;
+  }
+
+  /*imprint*/
+  #imprint-content {
+    width: 80%;
+  }
+
+  /*privacy*/
+  #privacy-content {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+  /*header*/
+
+  #header-top-content {
+    width: 80%;
+  }
+  #header-bottom-content {
     height: 60px;
   }
-  .header-bottom img {
-    display: none;
-  }
-  .home-content-start-left img {
+
+  #phone {
     display: none;
   }
 
@@ -161,65 +198,64 @@
     font-size: 34px;
   }
 
-  /*HOME*/
+  .header-bottom-content img {
+    display: none;
+  }
+
+  /*home-page*/
+  .home-content-start-left img {
+    display: none;
+  }
+  #services-home {
+    grid-template-columns: repeat(1, 1fr);
+  }
   #home-content {
-    width: 90%;
+    width: 80%;
   }
-  #home-content-start-right-top h2 {
-    font-size: 20px;
-  }
-
-  .vertical-line {
-    height: 200px;
-  }
-
-  #home-content-start-right-top p {
-    width: 100%;
-    font-size: 14px;
-  }
-
-  #title h1 {
-    font-size: 30px;
-  }
-
-  #title p {
-    font-size: 16px;
-  }
-
   .home-about {
     flex-direction: column;
   }
 
-  .vertical-line-2 {
+  #vertical-line-2 {
     display: none;
   }
 
-  #home-contact-middle {
-    width: 111%;
-  }
-
-  #home-contact-bottom {
-    width: 100%;
-    top: -30px;
-  }
-
-  .form-top {
-    flex-direction: column;
-  }
-
-  #form-top input {
-    width: 100%;
-  }
-
-  #checkbox p {
-    font-size: 14px;
-  }
-
-  /*FOOTER*/
-  #footer-content {
+  /*about*/
+  #about-content {
     width: 80%;
   }
 
+  #about-content-top {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #about-content-bottom {
+    text-align: justify;
+  }
+
+  /*services*/
+  #services-content {
+    width: 80%;
+  }
+  #services-content-top {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #service-icon-bottom-text {
+    width: 120%;
+  }
+
+  /*contact*/
+  #contact-content {
+    width: 80%;
+  }
+
+  #contact-content-top {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /*footer*/
+  #footer-content {
+    width: 80%;
+  }
   .footer-content {
     justify-content: center;
     align-items: center;
@@ -233,31 +269,8 @@
     width: 100%;
   }
 
-  #footer-top-left-top {
-    width: 100%;
-  }
-
-  #footer-top-left-top h2 {
-    font-size: 18px;
-  }
-
-  #footer-top-left-top h5 {
-    font-size: 12px;
-  }
-
-  .footer-btns {
-    flex-direction: column;
-  }
-
-  .footer-btns button {
-    font-size: 12px;
-  }
-
-  .footer-top-left-bottom p {
-    font-size: 14px;
-  }
-
   #footer-top-right {
+    margin-top: 20px;
     flex-direction: column;
     width: 100%;
   }
@@ -266,62 +279,384 @@
     width: 200%;
   }
 
-  .footer-bottom {
-    margin-top: -70px;
+  /*imprint*/
+  #imprint-content {
+    width: 80%;
   }
 
-  .footer-bottom-bottom p {
-    font-size: 12px;
+  /*privacy*/
+  #privacy-content {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 481px) {
+  /*header*/
+
+  #header-top-content {
+    width: 85%;
+    justify-content: center;
+  }
+  #header-bottom-content {
+    width: 85%;
+    height: 60px;
+    justify-content: center;
+  }
+  #header-bottom-content-on-scroll {
+    width: 85%;
+    padding-right: 20px;
   }
 
-  /*ABOUT*/
+  #phone {
+    display: none;
+  }
+
+  #instagram {
+    display: none;
+  }
+
+  #navigation {
+    display: none;
+  }
+
+  .header-bottom-content img {
+    display: none;
+  }
+
+  #header-bottom-content {
+    width: 85%;
+    justify-content: right;
+    padding-right: 20px;
+  }
+
+  #mobile-menu-show {
+    display: block;
+  }
+
+  #mobile-menu-exit {
+    display: block;
+    font-size: 34px;
+  }
+
+  /*home-page*/
+
+  #home-content-start-right-top h2 {
+    font-size: 28px;
+  }
+  .home-about {
+    flex-direction: column;
+  }
+
+  .vertical-line {
+    height: 200px;
+  }
+
+  #home-content-start-right-top p {
+    width: 100%;
+    font-size: 16px;
+  }
+  .home-content-start-left img {
+    display: none;
+  }
+  #services-home {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #home-content {
+    width: 85%;
+  }
+
+  #vertical-line-2 {
+    display: none;
+  }
+
+  #home-contact-middle {
+    width: 118%;
+  }
+  #home-contact-bottom {
+    width: 100%;
+    top: -30px;
+    margin-bottom: 80px;
+  }
+
+  /*about*/
   #about-content {
-    width: 90%;
+    width: 85%;
   }
 
   #about-content-top {
     grid-template-columns: repeat(1, 1fr);
-    row-gap: 20px;
   }
-
   #about-content-bottom {
-    width: 100%;
-  }
-
-  .about-content-bottom p {
     text-align: justify;
   }
 
-  /*SERVICES*/
+  /*services*/
   #services-content {
-    width: 90%;
+    width: 85%;
   }
-
   #services-content-top {
     grid-template-columns: repeat(1, 1fr);
   }
-
-  #service-icon-bottom p {
-    text-align: center;
+  #service-icon-bottom-text {
+    width: 120%;
   }
 
-  /*RIGHTS*/
-  #imprint-content {
-    width: 90%;
+  #service-card a {
+    width: 360px;
+    height: 162px;
   }
 
-  #privacy-content {
-    width: 90%;
-  }
-  #privacy-content h1 {
-    font-size: 28px;
-  }
-  /*CONTACT*/
+  /*contact*/
   #contact-content {
-    width: 90%;
+    width: 85%;
   }
 
   #contact-content-top {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  /*footer*/
+  #footer-content {
+    width: 85%;
+  }
+  .footer-content {
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-top {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  #footer-top-left {
+    width: 100%;
+  }
+
+  #footer-top-left-top h2 {
+    font-size: 24px;
+  }
+  #footer-top-right {
+    margin-top: 20px;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .footer-top-right-left p {
+    width: 200%;
+  }
+
+  .footer-btns {
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+
+  /*imprint*/
+  #imprint-content {
+    width: 85%;
+  }
+
+  /*privacy*/
+  #privacy-content {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 480px) and (min-width: 320px) {
+  /*header*/
+
+  #phone {
+    display: none;
+  }
+  #instagram {
+    display: none;
+  }
+  #header-top-content {
+    width: 90%;
+    justify-content: center;
+  }
+  .header-top-content p {
+    font-size: 12px;
+  }
+  #header-bottom {
+    height: 60px;
+  }
+  .header-bottom img {
+    display: none;
+  }
+
+  #navigation {
+    display: none;
+  }
+
+  #header-bottom-content {
+    width: 90%;
+    justify-content: right;
+    padding-right: 20px;
+  }
+
+  #mobile-menu-show {
+    display: block;
+  }
+
+  #mobile-menu-exit {
+    display: block;
+    font-size: 34px;
+  }
+
+  /*home-page*/
+
+  #title h1 {
+    font-size: 30px;
+  }
+
+  #title p {
+    font-size: 16px;
+  }
+
+  #home-content-start-right-top h2 {
+    font-size: 20px;
+  }
+  .home-about {
+    flex-direction: column;
+  }
+
+  .vertical-line {
+    height: 200px;
+  }
+
+  #home-content-start-right-top p {
+    width: 100%;
+    font-size: 14px;
+  }
+  .home-content-start-left img {
+    display: none;
+  }
+  #services-home {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #home-content {
+    width: 85%;
+  }
+
+  #vertical-line-2 {
+    display: none;
+  }
+
+  #home-contact-middle {
+    width: 118%;
+  }
+  #home-contact-bottom {
+    width: 100%;
+    top: -30px;
+    margin-bottom: 80px;
+  }
+
+  .form-top {
+    flex-direction: column;
+  }
+
+  #form-top input {
+    width: 100%;
+  }
+
+  /*about*/
+  #about-content {
+    width: 85%;
+  }
+
+  #about-content-top {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #about-content-bottom {
+    text-align: justify;
+  }
+
+  /*services*/
+  #services-content {
+    width: 85%;
+  }
+  #services-content-top {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #service-icon-bottom-text {
+    width: 120%;
+  }
+
+  #service-card a {
+    width: 300px;
+    height: 135px;
+  }
+
+  #service-card-right h3 {
+    font-size: 18px;
+  }
+
+  /*contact*/
+  #contact-content {
+    width: 85%;
+  }
+
+  #contact-content-top {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  /*footer*/
+  #footer-content {
+    width: 85%;
+  }
+  .footer-content {
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-top {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  #footer-top-left {
+    width: 100%;
+  }
+
+  #footer-top-left-top h2 {
+    font-size: 16px;
+  }
+  #footer-top-left-top h5 {
+    font-size: 12px;
+  }
+  #footer-top-right {
+    margin-top: 20px;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .footer-top-right-left p {
+    width: 200%;
+  }
+
+  .footer-btns {
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+
+  .footer-bottom-bottom p {
+    font-size: 14px;
+  }
+
+  /*imprint*/
+  #imprint-content {
+    width: 85%;
+  }
+
+  /*privacy*/
+  #privacy-content {
+    width: 85%;
+  }
+
+  #service-icon-bottom h3 {
+    font-size: 16px;
+  }
+
+  #service-icon-bottom-text h5 {
+    font-size: 16px;
   }
 }

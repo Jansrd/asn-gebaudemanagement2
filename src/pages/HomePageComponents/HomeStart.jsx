@@ -26,7 +26,7 @@ export default function HomeStart() {
           id="home-content-start-right-top"
         >
           <h2>ASN Gebäudemanagement</h2>
-          <p>ihr partner rund um gebaude und garten.</p>
+          <p>ihr partner rund um Gebäude und Garten.</p>
         </div>
         <div className="home-content-start-right-bottom">
           <button onClick={homeScroll}>

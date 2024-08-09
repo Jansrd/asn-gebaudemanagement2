@@ -17,7 +17,7 @@ const ServiceIcon = ({
       <div className="service-icon-bottom" id="service-icon-bottom">
         <h3>{title}</h3>
         <p>{text}</p>
-        <div className="service-icon-bottom-text">
+        <div className="service-icon-bottom-text" id="service-icon-bottom-text">
           <h3>{contactText}</h3>
           <h5 style={{ color: color }}>{contactText2}</h5>
         </div>

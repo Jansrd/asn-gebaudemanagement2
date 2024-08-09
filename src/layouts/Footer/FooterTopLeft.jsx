@@ -9,7 +9,7 @@ export default function FooterTopLeft() {
     <div className="footer-top-left" id="footer-top-left">
       <div className="footer-top-left-top" id="footer-top-left-top">
         <h2>ASN Gebäudemanagement</h2>
-        <h5>ihr partner rund um gebaude und garten.</h5>
+        <h5>ihr partner rund um Gebäude und Garten.</h5>
         <div className="footer-btns">
           <a
             rel="noreferrer"

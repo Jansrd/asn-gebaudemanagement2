@@ -9,10 +9,10 @@ const ServiceCard = ({ icon, title, text }) => {
   return (
     <div className="service-card" id="service-card">
       <Link to="/dienstleistungen" onClick={scrollUp}>
-        <div className="service-card-top">
+        <div className="service-card-left">
           <p>{icon}</p>
         </div>
-        <div className="service-card-bottom" id="service-card-bottom">
+        <div className="service-card-right" id="service-card-right">
           <h3>{title}</h3>
           <p>{text}</p>
         </div>

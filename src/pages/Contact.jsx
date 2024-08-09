@@ -25,17 +25,16 @@ const Contact = () => {
               icon={<MdOutlineLocationOn />}
               contactText="ASN Gebäudemanagement,"
               contactText2="Eckstraße 7 89250 Senden"
+              color="rgb(135, 135, 135)"
             />
           </a>
           <ServiceIcon icon={<MdPhoneIphone />} contactText="+49 17684560147" />
           <ServiceIcon icon={<MdMailOutline />} contactText="info@asn-ulm.de" />
-        </div>
-        <div className="contact-content-grid-row-2">
           <ServiceIcon
             icon={<FiClock />}
             contactText="Mon - Sam 8.00 - 17.00 Uhr"
             contactText2="Sonntag GESCHLOSSEN"
-            color="red"
+            color="rgb(255, 0, 0)"
           />
         </div>
       </div>
