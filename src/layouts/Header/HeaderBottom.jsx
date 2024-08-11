@@ -3,7 +3,7 @@ import asn_logo from "../../assets/images/asn_logo.png";
 import Navigation from "./Navigation";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoCloseSharp } from "react-icons/io5";
-import { Link } from "react-router-dom";
+import MobileMenu from "./MobileMenu";
 
 export default function HeaderBottom() {
   const [headerHeight, setHeaderHeight] = useState(false);
@@ -48,32 +48,8 @@ export default function HeaderBottom() {
           style={{ visibility: logoVisibility }}
         />
         <Navigation />
-        {clicked ? (
-          <div className="mobile-menu" id="mobile-menu">
-            <ul>
-              <li>
-                <Link to="/" onClick={scrollUp}>
-                  Startseite
-                </Link>
-              </li>
-              <li>
-                <Link to="/über-uns" onClick={scrollUp}>
-                  Über uns
-                </Link>
-              </li>
-              <li>
-                <Link to="/dienstleistungen" onClick={scrollUp}>
-                  Dienstleistungen
-                </Link>
-              </li>
-              <li>
-                <Link to="/kontakt" onClick={scrollUp}>
-                  Kontakt
-                </Link>
-              </li>
-            </ul>
-          </div>
-        ) : null}
+        {clicked ? <MobileMenu onScrollUp={scrollUp} /> : null}
+
         {!clicked ? (
           <GiHamburgerMenu
             className="mobile-menu-show"

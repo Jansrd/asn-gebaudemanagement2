@@ -113,8 +113,9 @@
   width: 100%;
   height: calc(100vh - 90px);
   z-index: 1;
-  background-color: rgb(245, 245, 245);
+  background-color: rgb(240, 240, 240);
   overflow-y: hidden;
+  animation: mymove 0.8s;
 }
 
 .mobile-menu ul {
@@ -139,4 +140,13 @@
 
 .fixed-position {
   position: fixed;
+}
+
+@keyframes mymove {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: 0;
+  }
 }
