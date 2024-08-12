@@ -291,9 +291,14 @@
   cursor: pointer;
 }
 
-.checkbox p {
+.checkbox a {
   font-size: 16px;
   margin-left: 15px;
+  color: rgb(10, 135, 31);
+}
+
+.checkbox a:hover {
+  text-decoration: none;
 }
 
 .btn-send {

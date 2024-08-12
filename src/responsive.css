@@ -558,6 +558,9 @@
   #form-top input {
     width: 100%;
   }
+  #form-middle {
+    width: 100%;
+  }
 
   /*about*/
   #about-content {

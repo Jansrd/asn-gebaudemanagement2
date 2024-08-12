@@ -7,7 +7,7 @@ const MobileMenu = ({ onScrollUp }) => {
     <div className="mobile-menu" id="mobile-menu">
       <ul>
         {routes.map((route) => (
-          <li>
+          <li key={route.id}>
             <Link to={route.to} onClick={onScrollUp}>
               {route.title}
             </Link>

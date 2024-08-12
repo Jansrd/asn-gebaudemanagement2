@@ -24,6 +24,7 @@
 .privacy-content h2 {
   text-decoration: underline;
   text-decoration-color: rgb(10, 135, 31);
+  margin-top: 35px;
 }
 
 .privacy-content p {

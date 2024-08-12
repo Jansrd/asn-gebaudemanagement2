@@ -1,6 +1,40 @@
+import { useRef, useState } from "react";
 import Title from "../../components/Title";
+import emailjs from "@emailjs/browser";
+import { Link } from "react-router-dom";
 
 export default function HomeContact() {
+  const form = useRef();
+  const [checked, setChecked] = useState(false);
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    if (checked === true) {
+      emailjs
+        .sendForm("service_yjdhi6n", "template_pbhl5qa", form.current, {
+          publicKey: "zbBbwVR3R-ED_J2Q7",
+        })
+        .then(
+          () => {
+            console.log("SUCCESS!");
+          },
+          (error) => {
+            console.log("FAILED...", error.text);
+          }
+        );
+      e.target.reset();
+      alert(
+        "Die Nachricht wurde gesendet, wir werden so schnell wie möglich antworten. Vielen Dank."
+      );
+    } else {
+      alert(
+        "Akzeptieren Sie die Nutzungsbedingungen und versuchen Sie es erneut."
+      );
+    }
+    setChecked(false);
+  };
+
   return (
     <div className="home-contact">
       <div className="home-contact-top">
@@ -24,7 +58,7 @@ export default function HomeContact() {
         </iframe>
       </div>
       <div className="home-contact-bottom" id="home-contact-bottom">
-        <form className="form">
+        <form className="form" ref={form} onSubmit={sendEmail}>
           <div className="form-content">
             <div className="form-top" id="form-top">
               <input
@@ -41,7 +75,7 @@ export default function HomeContact() {
                 required
               />
             </div>
-            <div className="form-middle">
+            <div className="form-middle" id="form-middle">
               <textarea
                 className="textarea"
                 type="text"
@@ -52,8 +86,16 @@ export default function HomeContact() {
             </div>
             <div className="form-bottom">
               <div className="checkbox" id="checkbox">
-                <input type="checkbox" />
-                <p>Ich habe die datenschutzerklärung zur kenntnis genommen.</p>
+                <input
+                  type="checkbox"
+                  checked={checked}
+                  onChange={() => setChecked(!checked)}
+                />
+                <Link to="/datenschutzerklärung" target="_blank">
+                  <p>
+                    Ich habe die datenschutzerklärung zur kenntnis genommen.
+                  </p>
+                </Link>
               </div>
               <button type="submit" className="btn-send">
                 Absenden

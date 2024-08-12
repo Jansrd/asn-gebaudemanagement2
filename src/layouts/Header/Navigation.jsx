@@ -8,7 +8,7 @@ export default function Navigation() {
   return (
     <ul className="navigation" id="navigation">
       {routes.map((route) => (
-        <li>
+        <li key={route.id}>
           <Link to={route.to} onClick={scrollUp}>
             {route.title}
           </Link>
