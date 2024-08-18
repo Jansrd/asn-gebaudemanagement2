@@ -98,17 +98,21 @@
   display: none;
   color: rgb(10, 135, 31);
   font-size: 30px;
+  cursor: pointer;
+  animation: rotate-exit 0.5s;
 }
 
 .mobile-menu-exit {
   display: none;
   color: rgb(10, 135, 31);
   font-size: 38px;
+  cursor: pointer;
+  animation: rotate 0.5s;
 }
 
 .mobile-menu {
   position: absolute;
-  top: 101px;
+  top: 99px;
   right: 0;
   width: 100%;
   height: calc(100vh - 90px);
@@ -116,6 +120,7 @@
   background-color: rgb(240, 240, 240);
   overflow-y: hidden;
   animation: mymove 0.8s;
+  box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
 }
 
 .mobile-menu ul {
@@ -148,5 +153,26 @@
   }
   100% {
     left: 0;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(90deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+}
+@keyframes rotate-exit {
+  0% {
+    transform: rotate(-90deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(0deg);
+    opacity: 1;
   }
 }

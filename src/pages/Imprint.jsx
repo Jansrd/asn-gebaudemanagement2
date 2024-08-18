@@ -1,11 +1,15 @@
 import React from "react";
 import "../assets/styles/imprint.css";
+import Title from "../components/Title";
 
 const Imprint = () => {
   return (
     <div className="imprint">
       <div className="imprint-content" id="imprint-content">
-        <h1>Impressum</h1>
+        <h1>
+          <Title title="Impressum" />
+        </h1>
+
         <div className="imprint-company">
           <p>
             Angaben gemäß § 5 TMG<br></br>

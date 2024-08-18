@@ -19,7 +19,7 @@ const ServiceIcon = ({
         <p>{text}</p>
         <div className="service-icon-bottom-text" id="service-icon-bottom-text">
           <h3>{contactText}</h3>
-          <h5 style={{ color: color }}>{contactText2}</h5>
+          <p style={{ color: color }}>{contactText2}</p>
         </div>
       </div>
     </div>

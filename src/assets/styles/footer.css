@@ -166,9 +166,10 @@
   height: 300px;
 }
 
-.footer-to-righ-left h3 {
+.footer-top-right-left h3 {
   color: rgb(10, 135, 31);
   text-transform: uppercase;
+  letter-spacing: 3px;
 }
 
 .footer-top-right-left p {
@@ -223,6 +224,7 @@
 }
 
 .footer-bottom-bottom {
+  height: auto;
   display: flex;
   gap: 50px;
   margin-top: 15px;
@@ -232,6 +234,7 @@
   color: rgb(100, 100, 100);
 }
 
-.footer-botto-bottom p {
+.footer-bottom-bottom p {
   font-size: 14px;
+  text-align: center;
 }

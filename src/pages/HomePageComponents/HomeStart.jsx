@@ -15,18 +15,18 @@ export default function HomeStart() {
   /*260 */
 
   return (
-    <div className="home-content-start">
+    <div className="home-content-start" id="home-content-start">
       <div className="home-content-start-left">
         <img src={asn_logo_home} alt="asn home" />
       </div>
-      <div className="vertical-line"></div>
+      <div className="vertical-line" id="vertical-line"></div>
       <div className="home-content-start-right">
         <div
           className="home-content-start-right-top"
           id="home-content-start-right-top"
         >
           <h2>ASN Gebäudemanagement</h2>
-          <p>ihr partner rund um Gebäude und Garten.</p>
+          <p>Ihr Partner rund um Gebäude und Garten.</p>
         </div>
         <div className="home-content-start-right-bottom">
           <button onClick={homeScroll}>

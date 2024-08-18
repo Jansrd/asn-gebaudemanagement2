@@ -326,7 +326,6 @@
   #header-bottom-content {
     width: 85%;
     justify-content: right;
-    padding-right: 20px;
   }
 
   #mobile-menu-show {
@@ -491,7 +490,6 @@
   #header-bottom-content {
     width: 90%;
     justify-content: right;
-    padding-right: 20px;
   }
 
   #mobile-menu-show {
@@ -512,23 +510,26 @@
   #title p {
     font-size: 16px;
   }
-
+  #home-content-start {
+    gap: 20px;
+  }
   #home-content-start-right-top h2 {
-    font-size: 20px;
+    font-size: 24px;
   }
   .home-about {
     flex-direction: column;
   }
 
-  .vertical-line {
-    height: 200px;
+  #vertical-line {
+    height: 220px;
+    margin-left: 20px;
   }
 
   #home-content-start-right-top p {
     width: 100%;
-    font-size: 14px;
+    font-size: 16px;
   }
-  .home-content-start-left img {
+  .home-content-start-left {
     display: none;
   }
   #services-home {
@@ -572,6 +573,7 @@
   }
   #about-content-bottom {
     text-align: justify;
+    font-size: 16px;
   }
 
   /*services*/
@@ -586,8 +588,8 @@
   }
 
   #service-card a {
-    width: 300px;
-    height: 135px;
+    width: 335px;
+    height: 151px;
   }
 
   #service-card-right h3 {
@@ -601,6 +603,7 @@
 
   #contact-content-top {
     grid-template-columns: repeat(1, 1fr);
+    row-gap: 80px;
   }
 
   /*footer*/
@@ -621,10 +624,10 @@
   }
 
   #footer-top-left-top h2 {
-    font-size: 16px;
+    font-size: 18px;
   }
   #footer-top-left-top h5 {
-    font-size: 12px;
+    font-size: 14px;
   }
   #footer-top-right {
     margin-top: 20px;
@@ -649,17 +652,25 @@
   #imprint-content {
     width: 85%;
   }
+  #imprint-content h1 {
+    text-align: left;
+    font-size: 30px;
+  }
 
   /*privacy*/
   #privacy-content {
     width: 85%;
   }
 
-  #service-icon-bottom h3 {
-    font-size: 16px;
+  #privacy-content h1 {
+    font-size: 30px;
   }
 
-  #service-icon-bottom-text h5 {
-    font-size: 16px;
+  #service-icon-bottom h3 {
+    font-size: 18px;
+  }
+
+  #service-icon-bottom-text p {
+    font-size: 18px;
   }
 }

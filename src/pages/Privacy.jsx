@@ -1,11 +1,15 @@
 import React from "react";
 import "../assets/styles/privacy.css";
+import Title from "../components/Title";
 
 const Privacy = () => {
   return (
     <div className="privacy">
       <div className="privacy-content" id="privacy-content">
-        <h1>Datenschutzerklärung</h1>
+        <h1>
+          <Title title="Datenschutzerklärung" />
+        </h1>
+
         <p>
           Wir freuen uns sehr über Ihr Interesse an unserem Unternehmen.
           Datenschutz hat einen besonders hohen Stellenwert für die
