@@ -28,7 +28,7 @@
 }
 
 .footer-top-left {
-  width: 60%;
+  width: 65%;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -108,9 +108,10 @@
 }
 
 .footer-top-right {
-  width: 40%;
+  width: 45%;
   height: auto;
   display: flex;
+  gap: 20px;
 }
 
 .footer-top-right-left {

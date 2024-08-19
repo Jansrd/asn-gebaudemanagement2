@@ -31,6 +31,9 @@
 #phone {
   font-weight: 500;
 }
+#phone-num {
+  color: rgb(10, 135, 31);
+}
 #instagram {
   color: rgb(193, 53, 132);
 }

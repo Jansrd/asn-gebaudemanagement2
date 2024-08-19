@@ -1,3 +1,14 @@
+@media screen and (max-width: 1760px) {
+  #footer-top-left {
+    width: 60%;
+  }
+
+  #footer-top-right {
+    gap: 20px;
+    width: 50%;
+  }
+}
+
 @media screen and (max-width: 1620px) {
   /*footer*/
   .footer-content {
@@ -178,15 +189,17 @@
   #phone {
     display: none;
   }
+  #instagram {
+    margin-right: 2px;
+  }
 
   #navigation {
     display: none;
   }
 
   #header-bottom-content {
-    width: 90%;
+    width: 80%;
     justify-content: right;
-    padding-right: 20px;
   }
 
   #mobile-menu-show {
@@ -203,7 +216,13 @@
   }
 
   /*home-page*/
-  .home-content-start-left img {
+  /* .home-content-start-left img {
+    display: none;
+  } */
+  #home-content-start-left h2:after {
+    content: "Ihr Partner rund um Gebäude und Garten.";
+  }
+  #home-content-start-right {
     display: none;
   }
   #services-home {
@@ -214,6 +233,9 @@
   }
   .home-about {
     flex-direction: column;
+  }
+  #vertical-line {
+    display: none;
   }
 
   #vertical-line-2 {
@@ -339,24 +361,33 @@
 
   /*home-page*/
 
-  #home-content-start-right-top h2 {
-    font-size: 28px;
+  #home-content-start-left h2:after {
+    font-size: 20px;
+    content: "Ihr Partner rund um Gebäude und Garten.";
   }
+  #home-content-start-right {
+    display: none;
+  }
+
+  #home-content-start-left img {
+    height: 220px;
+  }
+
   .home-about {
     flex-direction: column;
   }
 
-  .vertical-line {
-    height: 200px;
+  #vertical-line {
+    display: none;
   }
 
   #home-content-start-right-top p {
     width: 100%;
     font-size: 16px;
   }
-  .home-content-start-left img {
+  /* .home-content-start-left img {
     display: none;
-  }
+  } */
   #services-home {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -471,7 +502,7 @@
   }
 }
 
-@media screen and (max-width: 480px) and (min-width: 320px) {
+@media screen and (max-width: 480px) and (min-width: 370px) {
   /*header*/
 
   #phone {
@@ -485,7 +516,7 @@
     justify-content: center;
   }
   .header-top-content p {
-    font-size: 12px;
+    font-size: 14px;
   }
   #header-bottom {
     height: 60px;
@@ -514,6 +545,18 @@
 
   /*home-page*/
 
+  #home-content-start-left h2:after {
+    font-size: 18px;
+    content: "Ihr Partner rund um Gebäude und Garten.";
+  }
+  #home-content-start-right {
+    display: none;
+  }
+
+  #home-content-start-left img {
+    height: 170px;
+  }
+
   #title h1 {
     font-size: 30px;
   }
@@ -532,8 +575,7 @@
   }
 
   #vertical-line {
-    height: 220px;
-    margin-left: 20px;
+    display: none;
   }
 
   #home-content-start-right-top p {
@@ -674,7 +716,248 @@
   }
 
   #privacy-content h1 {
+    font-size: 26px;
+  }
+
+  #service-icon-bottom h3 {
+    font-size: 18px;
+  }
+
+  #service-icon-bottom-text p {
+    font-size: 18px;
+  }
+
+  /*page not found*/
+  #page-not-found-content {
+    width: 85%;
+  }
+
+  #page-not-found-content-top h1 {
     font-size: 30px;
+  }
+  #page-not-found-content-top h3 {
+    text-align: center;
+    font-size: 18px;
+  }
+  #page-not-found-content-top p {
+    text-align: center;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 369px) and (min-width: 320px) {
+  #phone {
+    display: none;
+  }
+  #instagram {
+    display: none;
+  }
+  #header-top-content {
+    width: 90%;
+    justify-content: center;
+  }
+  .header-top-content p {
+    font-size: 12px;
+  }
+  #header-bottom {
+    height: 60px;
+  }
+  .header-bottom img {
+    display: none;
+  }
+
+  #navigation {
+    display: none;
+  }
+
+  #header-bottom-content {
+    width: 90%;
+    justify-content: right;
+  }
+
+  #mobile-menu-show {
+    display: block;
+  }
+
+  #mobile-menu-exit {
+    display: block;
+    font-size: 34px;
+  }
+
+  /*home-page*/
+
+  #home-content-start-left h2:after {
+    font-size: 16px;
+    content: "Ihr Partner rund um Gebäude und Garten.";
+  }
+  #home-content-start-right {
+    display: none;
+  }
+
+  #home-content-start-left img {
+    height: 140px;
+  }
+
+  #title h1 {
+    font-size: 30px;
+  }
+
+  #title p {
+    font-size: 16px;
+  }
+  #home-content-start {
+    gap: 20px;
+  }
+  #home-content-start-right-top h2 {
+    font-size: 24px;
+  }
+  .home-about {
+    flex-direction: column;
+  }
+
+  #vertical-line {
+    display: none;
+  }
+
+  #home-content-start-right-top p {
+    width: 100%;
+    font-size: 16px;
+  }
+  .home-content-start-left {
+    display: none;
+  }
+  #services-home {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #home-content {
+    width: 85%;
+  }
+
+  #vertical-line-2 {
+    display: none;
+  }
+
+  #home-contact-middle {
+    width: 118%;
+  }
+  #home-contact-bottom {
+    width: 100%;
+    top: -30px;
+    margin-bottom: 80px;
+  }
+
+  .form-top {
+    flex-direction: column;
+  }
+
+  #form-top input {
+    width: 100%;
+  }
+  #form-middle {
+    width: 100%;
+  }
+
+  /*about*/
+  #about-content {
+    width: 85%;
+  }
+
+  #about-content-top {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #about-content-bottom {
+    text-align: justify;
+    font-size: 16px;
+  }
+
+  /*services*/
+  #services-content {
+    width: 85%;
+  }
+  #services-content-top {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #service-icon-bottom-text {
+    width: 120%;
+  }
+
+  #service-card a {
+    width: 310px;
+    height: 140px;
+  }
+
+  #service-card-right h3 {
+    font-size: 18px;
+  }
+
+  /*contact*/
+  #contact-content {
+    width: 85%;
+  }
+
+  #contact-content-top {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 80px;
+  }
+
+  /*footer*/
+  #footer-content {
+    width: 85%;
+  }
+  .footer-content {
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-top {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  #footer-top-left {
+    width: 100%;
+  }
+
+  #footer-top-left-top h2 {
+    font-size: 16px;
+  }
+  #footer-top-left-top h5 {
+    font-size: 12px;
+  }
+  #footer-top-right {
+    margin-top: 20px;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .footer-top-right-left p {
+    width: 200%;
+  }
+
+  .footer-btns {
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+
+  .footer-bottom-bottom p {
+    font-size: 14px;
+  }
+
+  /*imprint*/
+  #imprint-content {
+    width: 85%;
+  }
+  #imprint-content h1 {
+    text-align: left;
+    font-size: 30px;
+  }
+
+  /*privacy*/
+  #privacy-content {
+    width: 85%;
+  }
+
+  #privacy-content h1 {
+    font-size: 22px;
   }
 
   #service-icon-bottom h3 {

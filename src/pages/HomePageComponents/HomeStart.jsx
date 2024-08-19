@@ -16,11 +16,12 @@ export default function HomeStart() {
 
   return (
     <div className="home-content-start" id="home-content-start">
-      <div className="home-content-start-left">
+      <div className="home-content-start-left" id="home-content-start-left">
         <img src={asn_logo_home} alt="asn home" />
+        <h2></h2>
       </div>
       <div className="vertical-line" id="vertical-line"></div>
-      <div className="home-content-start-right">
+      <div className="home-content-start-right" id="home-content-start-right">
         <div
           className="home-content-start-right-top"
           id="home-content-start-right-top"

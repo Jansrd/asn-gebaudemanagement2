@@ -8,7 +8,7 @@ export default function HeaderTop() {
           Mon - Sam 8.00 - 17.00 Sonntag <span id="closed">GESCHLOSSEN</span>
         </p>
         <p id="phone">
-          Kontaktiere uns: <span id="phone">+49 17684560147</span>
+          Kontaktiere uns: <span id="phone-num">+49 17684560147</span>
         </p>
         <a
           href="https://www.instagram.com/asn_gebaeudemanagement/"

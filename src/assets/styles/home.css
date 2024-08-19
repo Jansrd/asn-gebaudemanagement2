@@ -16,15 +16,32 @@
 /*HOME START*/
 .home-content-start {
   width: 100%;
-  height: calc(100vh - 175px);
+  min-height: calc(100vh - 175px);
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 30px;
 }
 
+.home-content-start-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
 .home-content-start-left img {
-  height: 250px;
+  height: 280px;
+}
+
+.home-content-start-left h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: rgb(10, 135, 31);
+  margin: 0;
+  line-height: 15px;
+  text-align: center;
 }
 
 .vertical-line {
