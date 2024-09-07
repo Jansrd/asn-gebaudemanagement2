@@ -12,7 +12,7 @@ export default function HomeContact() {
 
     if (checked === true) {
       emailjs
-        .sendForm("service_yjdhi6n", "template_pbhl5qa", form.current, {
+        .sendForm("service_5vi1w7k", "template_pbhl5qa", form.current, {
           publicKey: "zbBbwVR3R-ED_J2Q7",
         })
         .then(
@@ -40,7 +40,7 @@ export default function HomeContact() {
       <div className="home-contact-top">
         <Title
           title="Kontaktiere uns"
-          subtitle="Kontaktieren sie uns und wir werden uns bald bei ihnen melden."
+          subtitle="Kontaktieren Sie uns und wir werden uns bald bei Ihnen melden."
         />
       </div>
       <div className="home-contact-middle" id="home-contact-middle">
@@ -70,7 +70,7 @@ export default function HomeContact() {
               />
               <input
                 type="email"
-                placeholder="E-mail-adresse"
+                placeholder="E-mail Adresse"
                 name="user_email"
                 required
               />
@@ -93,7 +93,7 @@ export default function HomeContact() {
                 />
                 <Link to="/datenschutzerklärung" target="_blank">
                   <p>
-                    Ich habe die datenschutzerklärung zur kenntnis genommen.
+                    Ich habe die Datenschutzerklärung zur Kenntnis genommen.
                   </p>
                 </Link>
               </div>

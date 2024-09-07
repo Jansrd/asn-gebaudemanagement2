@@ -9,7 +9,7 @@ export default function FooterTopRight() {
   return (
     <div className="footer-top-right" id="footer-top-right">
       <div className="footer-top-right-left">
-        <h3>Deinstleistungen</h3>
+        <h3>Dienstleistungen</h3>
         <ul>
           {services.map((service) => (
             <FooterServices

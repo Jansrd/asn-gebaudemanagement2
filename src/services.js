@@ -13,13 +13,13 @@ export const services = [
     id: 1,
     icon: <LiaBroomSolid />,
     title: "Unterhaltsreinigung",
-    text: "Ob Privatobjekt oder Gewerbe unsere Unterhaltsreinigung sorgt dafÜr, dass die Innenflachen immer sauber sind.",
+    text: "Ob Privatobjekt oder Gewerbe unsere Unterhaltsreinigung sorgt dafÜr, dass die Innenflächen immer sauber sind.",
   },
   {
     id: 2,
     icon: <MdOutlineCleaningServices />,
     title: "Grundreinigung",
-    text: "Die Grundreinigung beginnt am  Ende der allgemeinen Unterhaltsreinigung. Hier entfernen wir hartnackigeVerschmutzungen und erneuern den Aushärtefilm für Ihre Bodenbeläge.",
+    text: "Die Grundreinigung beginnt am Ende der allgemeinen Unterhaltsreinigung. Hier entfernen wir hartnackige Verschmutzungen und erneuern den Aushärtefilm für Ihre Bodenbeläge.",
   },
   {
     id: 3,
@@ -43,7 +43,7 @@ export const services = [
     id: 6,
     icon: <FaSwimmingPool />,
     title: "Sonderreinigung",
-    text: "Zur Sonderreinigung gehört alles, was überdie normale Reinigung hinausgeht – dazu gehören besonders hartnäckige Verschmutzungen,schwer zugängliche Stellen und ein deutlich erhöhter Arbeitsaufwand.",
+    text: "Zur Sonderreinigung gehört alles, was über die normale Reinigung hinausgeht – dazu gehören besonders hartnäckige Verschmutzungen, schwer zugängliche Stellen und ein deutlich erhöhter Arbeitsaufwand.",
   },
 
   {
@@ -56,7 +56,7 @@ export const services = [
     id: 8,
     icon: <MdConstruction />,
     title: "Hausmeister",
-    text: "Sie profitieren von einem persönlichen Betreuungsservice,der sich um die Pflege, Wartung und Kontrolle Ihrer Immobilie kümmert.",
+    text: "Sie profitieren von einem persönlichen Betreuungsservice, der sich um die Pflege, Wartung und Kontrolle Ihrer Immobilie kümmert.",
   },
   {
     id: 9,

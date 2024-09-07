@@ -13,7 +13,7 @@ const Contact = () => {
       <div className="contact-content" id="contact-content">
         <Title
           title="Kontaktiere uns"
-          subtitle="Kontaktieren sie uns und wir werden uns bald bei ihnen melden."
+          subtitle="Kontaktieren Sie uns und wir werden uns bald bei Ihnen melden."
         />
         <div className="contact-content-top" id="contact-content-top">
           <a
@@ -23,7 +23,7 @@ const Contact = () => {
           >
             <ServiceIcon
               icon={<MdOutlineLocationOn />}
-              contactText="ASN Gebäudemanagement,"
+              contactText="ASN Gebäudemanagement"
               contactText2="Eckstraße 7 89250 Senden"
               color="rgb(135, 135, 135)"
             />
@@ -32,7 +32,7 @@ const Contact = () => {
           <ServiceIcon icon={<MdMailOutline />} contactText="info@asn-ulm.de" />
           <ServiceIcon
             icon={<FiClock />}
-            contactText="Mon - Sam 8.00 - 17.00 Uhr"
+            contactText="Mo - Sa 8:00 - 17:00 Uhr"
             contactText2="Sonntag GESCHLOSSEN"
             color="rgb(255, 0, 0)"
           />

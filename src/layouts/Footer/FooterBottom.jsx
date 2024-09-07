@@ -19,7 +19,7 @@ const FooterBottom = () => {
           </Link>
         </div>
         <div className="footer-bottom-bottom">
-          <p>Copyright&copy; 2024 ASN Gebäudemanagement.</p>
+          <p>&copy;Copyright 2024 ASN Gebäudemanagement.</p>
         </div>
       </div>
     </div>
