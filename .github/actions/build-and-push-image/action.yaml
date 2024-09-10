@@ -22,8 +22,8 @@ runs:
 
     - name: Build Docker image
       shell: bash
-      run: docker build -t ghcr.io/${{ github.repository }}/asn-website:${{ inputs.version }} .
+      run: docker build -t ghcr.io/jansrd/asn-gebaudemanagement2/asn-website:${{ inputs.version }} .
 
     - name: Push Docker image
       shell: bash
-      run: docker push ghcr.io/${{ github.repository }}/asn-website:${{ inputs.version }}
+      run: docker push ghcr.io/jansrd/asn-gebaudemanagement2/asn-website:${{ inputs.version }}
