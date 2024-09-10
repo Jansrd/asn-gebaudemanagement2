@@ -29,7 +29,7 @@ jobs:
           echo "::set-output name=new_version::v$NEW_VERSION"
 
       - name: Run custom action to build and push Docker image
-        uses: ./.github/actions/build-and-push-image.yaml
+        uses: ./.github/actions/build-and-push-image
         with:
           version: ${{ steps.get_tag.outputs.new_version }}
 
