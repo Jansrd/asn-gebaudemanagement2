@@ -5,8 +5,7 @@ inputs:
     description: 'The version tag for the Docker image'
     required: true
 runs:
-  using: 'docker'
-  image: 'docker://node:21-alpine'
+  using: 'composite'
   steps:
     - name: Checkout repository
       uses: actions/checkout@v3
