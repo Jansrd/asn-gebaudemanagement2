@@ -313,26 +313,23 @@
 }
 
 @media screen and (max-width: 768px) and (min-width: 481px) {
-  /*HOVER EFFECTS*/
-  .service-icon:hover .service-icon-top p {
+  /* .service-icon:hover .service-icon-top p {
     background: white !important; /* Revert to default background */
-    transform: rotate(
+  /*transform: rotate(
       45deg
     ) !important; /* Keep the initial rotation but remove scaling */
-    color: inherit !important; /* Revert to default color */
-    pointer-events: none; /* Disable hover interaction */
-    transition: none !important; /* Disable transitions */
-  }
+  /*color: inherit !important; /* Revert to default color */
+  /*pointer-events: none; /* Disable hover interaction */
+  /*transition: none !important; /* Disable transitions */
 
-  .service-card a:hover .service-card-left p {
+  /* .service-card a:hover .service-card-left p {
     background: none;
     transform: rotate(
       45deg
     ) !important; /* Keep the initial rotation but remove scaling */
-    color: black !important; /* Revert to default color */
-    pointer-events: none; /* Disable hover interaction */
-    transition: none !important; /* Disable transitions */
-  }
+  /*color: black !important; /* Revert to default color */
+  /*pointer-events: none; /* Disable hover interaction */
+  /*transition: none !important; /* Disable transitions */
   /*header*/
 
   #header-top-content {
@@ -524,25 +521,23 @@
 
 @media screen and (max-width: 480px) and (min-width: 370px) {
   /*HOVER EFFECTS*/
-  .service-icon:hover .service-icon-top p {
+  /* .service-icon:hover .service-icon-top p {
     background: white !important; /* Revert to default background */
-    transform: rotate(
+  /*transform: rotate(
       45deg
     ) !important; /* Keep the initial rotation but remove scaling */
-    color: inherit !important; /* Revert to default color */
-    pointer-events: none; /* Disable hover interaction */
-    transition: none !important; /* Disable transitions */
-  }
+  /*color: inherit !important; /* Revert to default color */
+  /*pointer-events: none; /* Disable hover interaction */
+  /*transition: none !important; /* Disable transitions */
 
-  .service-card a:hover .service-card-left p {
+  /* .service-card a:hover .service-card-left p {
     background: none;
     transform: rotate(
       45deg
     ) !important; /* Keep the initial rotation but remove scaling */
-    color: black !important; /* Revert to default color */
-    pointer-events: none; /* Disable hover interaction */
-    transition: none !important; /* Disable transitions */
-  }
+  /*color: black !important; /* Revert to default color */
+  /*pointer-events: none; /* Disable hover interaction */
+  /*transition: none !important; /* Disable transitions */
 
   /*header*/
 
