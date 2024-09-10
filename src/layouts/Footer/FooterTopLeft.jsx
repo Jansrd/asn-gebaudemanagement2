@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { GrInstagram } from "react-icons/gr";
+import SocialContact from "../../components/SocialContact";
 
 export default function FooterTopLeft() {
   const scrollUp = () => {
@@ -25,15 +25,9 @@ export default function FooterTopLeft() {
       </div>
       <div className="footer-top-left-bottom">
         <p>Verbinde dich mit uns:</p>
-        {/*<a href=""><FaFacebookSquare id='facebook' /></a> */}
-        <a
-          href="https://www.instagram.com/asn_gebaeudemanagement/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <GrInstagram id="instagram-footer" />
-        </a>
-        {/* <a href=""><FaLinkedin id='linkedin' /></a>*/}
+        <div className="footer-social">
+          <SocialContact />
+        </div>
       </div>
     </div>
   );

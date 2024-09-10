@@ -99,11 +99,9 @@
   display: flex;
   align-items: center;
   gap: 20px;
-  align-items: center;
 }
 
-#instagram-footer {
-  color: rgb(193, 53, 132);
+.footer-social {
   margin-top: 8px;
 }
 

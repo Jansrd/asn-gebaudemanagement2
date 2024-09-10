@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { routes } from "../../routes";
+import SocialContactMobileMenu from "../../components/SocialContactMobileMenu";
 
 const MobileMenu = ({ onScrollUp }) => {
   return (
@@ -14,6 +15,9 @@ const MobileMenu = ({ onScrollUp }) => {
           </li>
         ))}
       </ul>
+      <div className="mobile-social">
+        <SocialContactMobileMenu />
+      </div>
     </div>
   );
 };

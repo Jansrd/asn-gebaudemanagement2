@@ -1,4 +1,4 @@
-import { GrInstagram } from "react-icons/gr";
+import SocialContact from "../../components/SocialContact";
 
 export default function HeaderTop() {
   return (
@@ -10,13 +10,9 @@ export default function HeaderTop() {
         <p id="phone">
           Kontaktiere uns: <span id="phone-num">+49 17684560147</span>
         </p>
-        <a
-          href="https://www.instagram.com/asn_gebaeudemanagement/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <GrInstagram id="instagram" />
-        </a>
+        <div className="header-social">
+          <SocialContact />
+        </div>
       </div>
     </div>
   );

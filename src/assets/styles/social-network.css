@@ -1,0 +1,11 @@
+.social-network {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.social-contact {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
