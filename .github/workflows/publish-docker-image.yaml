@@ -3,6 +3,10 @@ name: Publish Docker Image
 on:
   workflow_dispatch:
 
+permissions:
+  packages: write # Add permissions for the token to access packages
+  contents: read  # Standard content read access
+
 jobs:
   build-and-push:
     runs-on: ubuntu-latest
