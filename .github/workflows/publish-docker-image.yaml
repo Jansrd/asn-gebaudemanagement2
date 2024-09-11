@@ -1,7 +1,9 @@
 name: Publish Docker Image
 
 on:
-  workflow_dispatch:
+  workflow_dispatch: # Allows manual dispatch
+    branches:
+      - "*" # Allows manual dispatch on any branch
 
 permissions:
   packages: write # Add permissions for the token to access packages
