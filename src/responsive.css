@@ -672,6 +672,7 @@
   #services-content-top {
     grid-template-columns: repeat(1, 1fr);
   }
+
   #service-icon-bottom-text {
     width: 120%;
   }

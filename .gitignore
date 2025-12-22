@@ -1,4 +1,8 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# Dont commit Certs
+*.pem
+
+# Dont Commit Secrets
+*.env
 
 # dependencies
 /node_modules
