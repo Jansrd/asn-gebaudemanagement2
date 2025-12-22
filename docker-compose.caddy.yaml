@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile.caddy
+    image: asn-gebaudemanagement-web
+    container_name: asn-web
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      # Persist Caddy data (SSL certificates, ACME data, etc.)
+      - caddy_data:/data
+      - caddy_config:/config
+    environment:
+      # Let's Encrypt email for certificate notifications
+      - ACME_EMAIL=${ACME_EMAIL:-admin@asn-ulm.de}
+      # Cloudflare API token for DNS-01 challenge
+      - CLOUDFLARE_API_TOKEN=${CLOUDFLARE_API_TOKEN}
+    networks:
+      - app-network
+
+volumes:
+  # Persistent storage for Caddy (certificates auto-renew here)
+  caddy_data:
+    driver: local
+  caddy_config:
+    driver: local
+
+networks:
+  app-network:
+    driver: bridge
