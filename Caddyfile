@@ -4,6 +4,21 @@
 
     # Use Cloudflare DNS for ACME DNS-01 challenge
     acme_dns cloudflare {env.CLOUDFLARE_API_TOKEN}
+
+    # Global internal logging (ACME, renewals, errors, etc.)
+    log {
+        output file /data/caddy-internal.log {
+            roll_size 10MB
+            roll_keep 10
+        }
+        format json
+        level INFO
+    }
+}
+
+# Health check endpoint (localhost only, no TLS)
+:8080 {
+    respond /healthz 200
 }
 
 # Main site configuration

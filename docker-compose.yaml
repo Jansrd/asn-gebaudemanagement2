@@ -1,11 +1,6 @@
-version: '3.8'
-
 services:
   web:
-    build:
-      context: .
-      dockerfile: Dockerfile.caddy
-    image: asn-gebaudemanagement-web
+    image: ghcr.io/salt-mountain/asn-gebaudemanagement2:latest
     container_name: asn-web
     restart: unless-stopped
     ports:
@@ -20,6 +15,8 @@ services:
       - ACME_EMAIL=${ACME_EMAIL:-admin@asn-ulm.de}
       # Cloudflare API token for DNS-01 challenge
       - CLOUDFLARE_API_TOKEN=${CLOUDFLARE_API_TOKEN}
+      - XDG_DATA_HOME=/data
+      - XDG_CONFIG_HOME=/config
     networks:
       - app-network
 
@@ -33,3 +30,4 @@ volumes:
 networks:
   app-network:
     driver: bridge
+
