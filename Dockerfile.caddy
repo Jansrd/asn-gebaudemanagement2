@@ -9,8 +9,6 @@ WORKDIR /app
 # Configure build environment to handle memory constraints
 ENV GENERATE_SOURCEMAP=false
 ENV NODE_OPTIONS="--max_old_space_size=1536"
-# Limit webpack parallelism to reduce memory pressure
-ENV PARALLEL_WORKERS=1
 
 # Copy only dependency files first (better layer caching)
 COPY package.json bun.lock ./
