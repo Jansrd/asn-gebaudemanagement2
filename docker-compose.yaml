@@ -1,9 +1,6 @@
 services:
   web:
-    build:
-      context: .
-      dockerfile: Dockerfile.caddy
-    image: asn-gebaudemanagement-web
+    image: ghcr.io/salt-mountain/asn-gebaudemanagement2:latest
     container_name: asn-web
     restart: unless-stopped
     ports:
