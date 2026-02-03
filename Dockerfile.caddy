@@ -8,15 +8,19 @@ WORKDIR /app
 
 # Configure build environment to handle memory constraints
 ENV GENERATE_SOURCEMAP=false
-ENV NODE_OPTIONS=--max_old_space_size=1280
+ENV NODE_OPTIONS="--max_old_space_size=1536"
+# Limit webpack parallelism to reduce memory pressure
+ENV PARALLEL_WORKERS=1
 
-# Install dependencies
-COPY package*.json ./
-RUN bun ci
+# Copy only dependency files first (better layer caching)
+COPY package.json bun.lock ./
 
-# Build the application
+# Install dependencies with frozen lockfile
+RUN bun install --frozen-lockfile
+
+# Copy source and build
 COPY . .
-RUN bun run build
+RUN CI=false bun run build
 
 # Stage 2: Build Caddy with Cloudflare DNS module
 # ===========================================================================
