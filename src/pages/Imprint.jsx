@@ -148,9 +148,9 @@ const Imprint = () => {
             Verbindung bringen. Das Speichern von Cookies auf Ihrer Festplatte
             und die Anzeige von Web Beacons können Sie verhindern, indem Sie in
             Ihren Browser-Einstellungen ''keine Cookies akzeptieren'' wählen (Im
-            MS Internet-Explorer unter ''Extras > Internetoptionen > Datenschutz
-            > Einstellung''; im Firefox unter ''Extras > Einstellungen >
-            Datenschutz > Cookies''); wir weisen Sie jedoch darauf hin, dass Sie
+            MS Internet-Explorer unter ''Extras &gt; Internetoptionen &gt; Datenschutz
+            &gt; Einstellung''; im Firefox unter ''Extras &gt; Einstellungen &gt;
+            Datenschutz &gt; Cookies''); wir weisen Sie jedoch darauf hin, dass Sie
             in diesem Fall gegebenenfalls nicht sämtliche Funktionen dieser
             Website voll umfänglich nutzen können. Durch die Nutzung dieser
             Website erklären Sie sich mit der Bearbeitung der über Sie erhobenen

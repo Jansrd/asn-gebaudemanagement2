@@ -1,8 +1,6 @@
 import ServiceCard from "../../components/ServiceCard";
 import { services } from "../../services";
 import Title from "../../components/Title";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 
 export default function HomeService() {
   return (
