@@ -24,7 +24,7 @@ This project uses a modern, single-container deployment with automatic HTTPS:
 
 ### Tech Stack
 
-- **Frontend**: React 18 (Create React App)
+- **Frontend**: React 19 (Vite + Bun)
 - **Routing**: React Router v6 with German URL paths
 - **Server**: Caddy with Cloudflare DNS plugin
 - **SSL/TLS**: Automatic Let's Encrypt certificates via DNS-01 challenge
@@ -133,34 +133,38 @@ docker-compose -f docker-compose.caddy.yaml down -v --rmi all
 For development with hot-reload:
 
 ```bash
-npm install
-npm start
+bun install
+bun run dev
 ```
 
-This runs the React dev server on http://localhost:3000
+This runs the Vite dev server on http://localhost:3000
 
 ### Building for Production
 
 To build the React app locally (without Docker):
 
 ```bash
-npm run build
+bun run build
 ```
 
 Output will be in the `build/` directory.
 
-### Running Tests
+### Preview Production Build
+
+To preview the production build locally:
 
 ```bash
-npm test
+bun run preview
 ```
 
 ## Project Structure
 
 ```
 /src
-├── App.js                    # Main routing component
+├── App.jsx                   # Main routing component
+├── index.jsx                 # Application entry point
 ├── routes.js                 # Route definitions
+├── services.jsx              # Service definitions
 ├── components/               # Reusable components
 ├── layouts/                  # Header, Footer
 └── pages/                    # Page components
@@ -171,6 +175,8 @@ npm test
     ├── Imprint.jsx
     └── Privacy.jsx
 
+index.html                    # Entry HTML (Vite)
+vite.config.js                # Vite configuration
 /public                       # Static assets
 Dockerfile.caddy              # Multi-stage Caddy production build
 Caddyfile                     # Caddy server configuration
@@ -202,7 +208,7 @@ The `Caddyfile` handles:
 ### Docker Configuration
 
 **Multi-stage build** for minimal image size:
-1. **Stage 1**: Build React app with Node.js
+1. **Stage 1**: Build React app with Bun
 2. **Stage 2**: Build Caddy with Cloudflare plugin
 3. **Stage 3**: Combine into minimal Alpine image
 
