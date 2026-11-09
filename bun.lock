@@ -5,7 +5,7 @@
     "": {
       "name": "asn-gebaudemanagement2-v2",
       "dependencies": {
-        "@emailjs/browser": "^5.0.2",
+        "@emailjs/browser": "^5.0.3",
         "@testing-library/jest-dom": "^7.0.1",
         "@testing-library/react": "^16.3.3",
         "@testing-library/user-event": "^14.6.8",
@@ -348,7 +348,7 @@
 
     "@csstools/selector-specificity": ["@csstools/selector-specificity@2.2.0", "", { "peerDependencies": { "postcss-selector-parser": "^6.0.10" } }, "sha512-+OJ9konv95ClSTOJCmMZqpd5+YGsB2S+x6w3E1oaM8UuR5j8nTNHYSz8c9BEPGDOCMQYIEEGlVPj/VY64iTbGw=="],
 
-    "@emailjs/browser": ["@emailjs/browser@5.0.2", "", {}, "sha512-yhfjhO6q6843CXUxZcJ5iw+HLtLvNbdt0wx/cJ6upREmD/biKoB7hAAO1HnYqhSH7owIUgwIbZOxSOblZyN3cQ=="],
+    "@emailjs/browser": ["@emailjs/browser@5.0.3", "", {}, "sha512-4HGAkWdzql7mrG34ZFFj7IDJNRgtbl1+yVgHdQJ6XSfhq9gxGUHtttr4UKNi7Fk++1hMXRHy1lTeGZrkioOtsw=="],
 
     "@eslint-community/eslint-utils": ["@eslint-community/eslint-utils@4.4.0", "", { "dependencies": { "eslint-visitor-keys": "^3.3.0" }, "peerDependencies": { "eslint": "^6.0.0 || ^7.0.0 || >=8.0.0" } }, "sha512-1/sA4dwrzBAyeUoQ6oxahHKmrZvsnLCg4RfxW3ZFGGmQkSNQPFNLV9CUEFQP1x9EYXHTo5p6xdhZM1Ne9p/AfA=="],
 
